@@ -206,3 +206,6 @@ margin: 20px; padding: 20px; display: block;*/
   margin-top: 10px;
   display: inline-block;
 }
+nav a:link:last-child{margin-right: 0;}
+
+
