@@ -18,13 +18,13 @@ body {
   margin: 0 auto;
 }
 .main-header {
-    background-color: #f7f7f7;
-    padding: 20px 40px;
-    margin-bottom: 60px;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
   /*height: 80px;*/
 }
 nav {
-    font-size: 18px;
+  font-size: 18px;
 }
 article {
   margin-bottom: 60px;
@@ -201,5 +201,8 @@ footer p {
 }
 nav a:link { /*background-color: orangered;
 margin: 20px; padding: 20px; display: block;*/
-	margin-right: 30px; margin-top: 10px; display: inline-block;
+  color: #1098ad;
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
 }
