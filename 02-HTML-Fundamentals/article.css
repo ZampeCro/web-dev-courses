@@ -1,7 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 * {
-  margin: 0 0 0 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
   padding: 0 0 0 0;
 }
 body {
@@ -29,6 +32,18 @@ p, a, h3, li {
   background-color: #f7f7f7;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
+}
+h2::before {
+  content: "SALE";
+  position: absolute;
+  background-color: red;
+  top: -15px;
+  left: -30px;
+  padding: 5px 5px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: inline-block;
 }
 /* PRODUCT INFORMATION */
 .price {
@@ -43,7 +58,7 @@ p, a, h3, li {
   margin-bottom: 20px;
 }
 .more-info:link, .more-info:visited {
-  color: black;
+  color: black; display: inline-block;
 }
 .more-info:hover, .more-info:active {
   text-decoration: none;
@@ -52,7 +67,7 @@ p, a, h3, li {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .details-list {
@@ -77,4 +92,54 @@ p, a, h3, li {
   padding-left: auto;
   width: 100%;
   border-top: 4px solid black;
+}
+.color-black {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px 10px 10px;
+  position: absolute;
+}
+.color-blue {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  position: absolute;
+  left: 30px
+}
+.colors {
+  position: relative;
+}
+.color-red {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  position: absolute;
+  left: 60px
+}
+.color-yellow {
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  position: absolute;
+  left: 90px
+}
+.color-green {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  position: absolute;
+  left: 120px
+}
+.color-brown {
+  background-color: saddlebrown;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  position: absolute;
+  left: 150px
 }

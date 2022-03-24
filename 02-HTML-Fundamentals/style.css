@@ -27,9 +27,27 @@ body {
 }
 nav {
   font-size: 18px;
+	text-align: center
 }
 article {
   margin-bottom: 60px;
+}
+h2 {
+    /* background-color: orangered;*/
+    position: relative;
+    margin-bottom: 0px;
+}
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 .post-header {
   margin-bottom: 40px;
@@ -47,10 +65,11 @@ h1, h2, h3 {
   color: #1098ad;
 }
 h1 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-style: italic;
-  padding-left: 0px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-left: 0px;
+    margin-bottom: -1px;
 }
 h2 {
   font-size: 40px;
@@ -232,19 +251,4 @@ h2::first-letter {
 h3 + p::first-line {
   color: red;
 }
-h2 {
- /* background-color: orangered;*/
-  position: relative;
-}
-h2::after {
-  content: "TOP";
-  background-color: yellow;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block;
-  padding: 5px 10px;
-  position: absolute;
-  top: -10px;
-  right: -25px;
-}
+
