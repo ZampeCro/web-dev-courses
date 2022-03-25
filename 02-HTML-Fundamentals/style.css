@@ -20,22 +20,22 @@ body {
   /*position: relative;*/
 }
 .main-header {
-  background-color: #f7f7f7;
+  background-color: red;
   padding: 20px 40px;
   margin-bottom: 60px;
   /*height: 80px;*/
 }
 nav {
   font-size: 18px;
-	text-align: center
+  text-align: center
 }
 article {
   margin-bottom: 60px;
 }
 h2 {
-    /* background-color: orangered;*/
-    position: relative;
-    margin-bottom: 0px;
+  /* background-color: orangered;*/
+  position: relative;
+  margin-bottom: 0px;
 }
 h2::after {
   content: "TOP";
@@ -65,11 +65,11 @@ h1, h2, h3 {
   color: #1098ad;
 }
 h1 {
-    font-size: 26px;
-    text-transform: uppercase;
-    font-style: italic;
-    padding-left: 0px;
-    margin-bottom: -1px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-left: 0px;
+  margin-bottom: -1px;
 }
 h2 {
   font-size: 40px;
@@ -251,4 +251,16 @@ h2::first-letter {
 h3 + p::first-line {
   color: red;
 }
+/*FLOATS*/
 
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+h1{float: left;}
+nav{float: right;}
