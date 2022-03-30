@@ -29,7 +29,8 @@ body {
 }
 nav {
   font-size: 18px;
-  text-align: center
+  text-align: center;
+    color: #1098ad;
 }
 article {
     /* [disabled]margin-bottom: 60px; */
@@ -100,6 +101,7 @@ li {
   font-size: 20;
   margin-bottom: 10px;
   /*display: inline;*/
+
 }
 li:last-child {
   margin-bottom: 0
@@ -136,7 +138,7 @@ aside {
 */
 .first-li {
   font-weight: bold;
-}
+   }
 li:first-child {
   /*font-weight: bold*/ ;
 }
@@ -152,7 +154,7 @@ article p:first-child {
 }
 /*Styling links*/
 a:link {
-  /* color: #1098ad*/ ;
+   color: #1098ad ;
   text-decoration: underline;
   /* [disabled]font-size: 30px; */
 }
@@ -228,6 +230,7 @@ nav a:link { /*background-color: orangered;
 margin: 20px; padding: 20px; display: block;*/
   margin-right: 30px;
   display: inline-block;
+    color: #1098ad;
 }
 nav a:link:last-child {
   margin-right: 0;
@@ -325,6 +328,7 @@ footer {
   font-style: italic;
 	margin-bottom: 5px;
 	display: block;
+    color: #1098ad;
 }
 .row {
 	display: flex;
