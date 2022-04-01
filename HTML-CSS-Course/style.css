@@ -85,7 +85,12 @@ img {
   width: 100%;
 }
 /* FEATURES */
-.features-icon {}
+.features-icon {
+	stroke: #1E4240;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 16px;
+}
 .features-title {
   margin-bottom: 16px;
   font-size: 20px;
@@ -135,7 +140,11 @@ h3 {
 .chair-details li:last-child {
   margin-bottom: 0;
 }
-.chair-icon {}
+.chair-icon {
+	stroke: #1E4240;
+	width: 24px;
+	height: 24px;
+}
 .chair-price {
   display: flex;
   justify-content: space-between;
