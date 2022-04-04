@@ -37,27 +37,76 @@ body {
 .carousel {
     width: 800px;
     margin: 100px auto;
-    padding: 32px;
-	padding-left: 86px;
+    padding: 32px 48px 32px 86px;;
+    /*padding-left: 86px;
+	padding-right: 48px;*/
     background-color: #1E4240;
     border-radius: 8px;
     color: #F7F7F8;
-	display: flex;
-	align-items: center;
-	grid-gap: 86px;
+    display: flex;
+    align-items: center;
+    grid-gap: 86px;
+    position: relative;
 }
 img {
     height: 200px;
     border-radius: 8px;
-	transform: scale(1.5);
-	box-shadow: 0 12px 24px  rgba(0,0,0,0.26)
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.26)
 }
-.testimonial-text { font-size: 18px; font-weight: 500; line-height: 1.5; margin-bottom: 32px;
+.testimonial-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
 }
-.testimonial-author { font-size: 14px; margin-bottom: 4px;
+.testimonial-author {
+    font-size: 14px;
+    margin-bottom: 4px;
 }
-.testimonial-job { font-size: 12px;
+.testimonial-job {
+    font-size: 12px;
 }
+/*CONTROLS*/
+.btn {
+    background-color: #F7F7F8;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.41)
+}
+.btn--left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+.btn--right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%)
+}
+.btn-icon {
+    height: 24px;
+    width: 24px;
+    stroke: #1E4240;
+}
+.dots { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 32px); display: flex; grid-gap: 12px;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #F7F7F8;
+    border: #1E4240 solid;
+	border-radius: 50%; cursor: pointer; 
+	
+}
+	.dot--fill{ background-color: #1E4240;}
 </style>
 </head>
 
@@ -68,16 +117,22 @@ img {
     <p class="testimonial-author">Maria del A.</p>
     <p class="testimonial-job">Senior Product Manager</p>
   </blockquote>
-  <button class="btn">
+  <button class="btn btn--left">
   <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
     <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
   </svg>
   </button>
-  <button class="btn">
-  <svg xmlns="http://www.w3.org/2000/svg" class="btm-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <button class="btn btn--right">
+  <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
   </svg>
   </button>
+  <div class="dots">
+    <button class="dot dot--fill">&nbsp;</button>
+    <button class="dot">&nbsp;</button>
+    <button class="dot">&nbsp;</button>
+    <button class="dot">&nbsp;</button>
+  </div>
 </div>
 </body>
 </html>
