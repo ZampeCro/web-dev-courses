@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <favorite name="main" value="#90BDBA"/>
 <favorite name="grey" value="#3A3A3A"/>
 <favorite name="aliceblue" value="#F7F7F8"/>
+=======
+<favorite name="main" value="#087F5B"/>
+<favorite name="grey" value="#748698"/>
+<favorite name="aliceblue" value="#F0F8FF"/>
+>>>>>>> Udemy/udemy
