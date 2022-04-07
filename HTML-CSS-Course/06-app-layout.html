@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App Layout</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "sans-serif";
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #343A40;
+    display: grid;
+    height: 100vw;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+}
+    nav, menu, section, main, aside { padding-top: 24px;}
+nav { background-color: #343A40;
+    color: #D9E3EB;
+    grid-row: 1/-1;
+}
+menu {
+    background-color: blueviolet;
+    color: aliceblue;
+    grid-column: 2/-1;
+}
+section {
+    background-color: #A0A7AD;
+}
+aside {
+    background-color: #A0A7AD;
+}
+</style>
+</head>
+
+<body>
+<nav>Nav</nav>
+<menu>Menu</menu>
+<section>Inbox</section>
+<main>Email view</main>
+<aside>Additional info</aside>
+</body>
+</html>

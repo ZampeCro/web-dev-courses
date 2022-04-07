@@ -7,7 +7,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-    *{box-sizing: border-box;}
+* {margin: 0; padding: 0;
+    box-sizing: border-box;
+}
 html {
     font-family: 'Rubik', sans-serif;
     color: #444;
@@ -16,17 +18,41 @@ html {
     margin: 0 auto;
     width: 1200px;
 }
-    header{background-color: orangered; height: 100vh;}
+header {
+/*    background-color: orangered;
+*/    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(65,64,64,0.60)), url("hero.jpg");
+    background-size: cover;
+    color: aliceblue;
+}
 nav {
     font-size: 20;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
-    background-color: #7DCCB4;
-}
+/*    padding-top: 32px;
+*/    
+/*    background-color: #7DCCB4;
+*/}
+.header-container {
+    width: 1200px;
+    position: absolute;
+    /*in relation to Parent size*/
+    top: 50%;
+    left: 50%;
+    /*In relation to Element siza*/
+    transform: translate(-50%, -50%);
+/*    background-color: violet;
+*/}
+.header-container-inner {
+    width: 50%;
+/*    background-color: blue;
+*/}
 h1 {
     font-size: 52px;
     margin-bottom: 32px;
+    line-height: 1.05;
 }
 p {
     font-size: 20px;
@@ -55,14 +81,16 @@ section {
 
 <body>
 <header>
-  <nav class="container">
+  <nav class="container" style="padding-top: 32px">
     <div>LOGO</div>
     <div>NAVIGATION</div>
   </nav>
-  <div class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quod porro eveniet provident hic voluptatem debitis tempore non. Enim esse, necessitatibus inventore dolorum maiores cupiditate quos vitae ratione hic. Blanditiis!</p>
-    <a href="#" class="btn">Start eating well</a></div>
+  <div class="header-container">
+    <div class="header-container-inner">
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quod porro eveniet provident hic voluptatem debitis tempore non. Enim esse, necessitatibus inventore dolorum maiores cupiditate quos vitae ratione hic. Blanditiis!</p>
+      <a href="#" class="btn">Start eating well</a></div>
+  </div>
 </header>
 <section>
   <div class="container">
