@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<favorite name="main" value="#1E4240"/>
-<favorite name="grey" value="#AAAAAA"/>
-<favorite name="aliceblue" value="#F7F7F8"/>
+<favorite_folder name="Tutorial%20Basic" state="expanded">
+</favorite_folder>
+<favorite name="#E67E22" value="#E67E22"/>
+<favorite name="#D7B08E" value="#D7B08E"/>
