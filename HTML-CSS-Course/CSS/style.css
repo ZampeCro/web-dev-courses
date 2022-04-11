@@ -64,14 +64,47 @@ body {
 /****************************/
 /**** GENERAL COMPONENTS ****/
 /****************************/
-.heading-primary {
-  font-size: 5.2rem;
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  grid-gap: 9.6rem;
+}
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr)
+}
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr)
+}
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr)
+}
+.heading-primary, .heading-secondary {
   font-weight: 700;
-  line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
   margin-bottom: 3.2rem;
 }
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #68360B;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   color: aliceblue;
@@ -100,6 +133,7 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+.section-how {}
 /***** HEADER ******/
 .header {
   display: flex;
@@ -130,18 +164,16 @@ body {
 .main-nav-link:hover, .main-nav-link:active {
   color: #E67E22;
 }
-.main-nav-link.nav-cta:link,.main-nav-link.nav-cta:visited {
+.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
   display: inline-block;
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: aliceblue;
   background-color: #E67E22;
 }
-.main-nav-link.nav-cta:hover,.main-nav-link.nav-cta:active {
-    
-  background-color: #472508;  
+.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
+  background-color: #472508;
 }
-
 /***** HERO SECTION*****/
 .section-hero {
   background-color: #D7B08E;
@@ -190,4 +222,11 @@ body {
 }
 .delivered-text span {
   color: #68360B;
+}
+/****HOW IT WORKS****/
+.section-how {
+  padding: 9.6rem 0;
+}
+.step-img {
+  width: 50%;
 }
