@@ -71,7 +71,8 @@ body {
 }
 .grid {
   display: grid;
-  grid-gap: 9.6rem;
+  grid-column-gap: 9.6rem;
+	grid-row-gap: 9.6rem
 }
 .grid-2-col {
   grid-template-columns: repeat(2, 1fr)
@@ -98,7 +99,9 @@ body {
   margin-bottom: 9.6rem;
 }
 .heading-tertiary {
-	font-size: 3.6rem; 
+	font-size: 3.0rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
 }
 .subheading {
   display: block;
