@@ -8,9 +8,16 @@
 
 - Font-weight
   default: 400
+  medium: 500
+  semi-bold: 600
+  bold: 700
 
 - Line-heights
   default: 1
+  small: 1.05
+  paragraph default: 1.6
+
+
 
 --- 02 COLORS
 
@@ -25,7 +32,7 @@
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
-
+    default: 9px
 --- 07 WHITE-SPACES
 
    - Spacing system (px)
@@ -109,9 +116,11 @@ body {
 .main-nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   grid-gap: 3.2rem;
 }
 .main-nav-link:link, .main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: #68360B;
   font-weight: 500;
@@ -121,6 +130,18 @@ body {
 .main-nav-link:hover, .main-nav-link:active {
   color: #E67E22;
 }
+.main-nav-link.nav-cta:link,.main-nav-link.nav-cta:visited {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: aliceblue;
+  background-color: #E67E22;
+}
+.main-nav-link.nav-cta:hover,.main-nav-link.nav-cta:active {
+    
+  background-color: #472508;  
+}
+
 /***** HERO SECTION*****/
 .section-hero {
   background-color: #D7B08E;
