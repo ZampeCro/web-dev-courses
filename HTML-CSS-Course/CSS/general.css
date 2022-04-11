@@ -83,6 +83,9 @@ body {
 .grid-4-col {
   grid-template-columns: repeat(4, 1fr)
 }
+.grid-center-v{
+	align-items: center;
+}
 .heading-primary, .heading-secondary, .heading-tertiary {
   font-weight: 700;
   color: #333;

@@ -8,8 +8,8 @@
   padding: 0 4.8rem;
 }
 .logo {
-    height: 2.2rem;
-    line-height: normal;
+  height: 2.2rem;
+  line-height: normal;
 }
 /***** NAVIGATION ******/
 .main-nav-list {
@@ -92,24 +92,44 @@
 .section-how {
   padding: 9.6rem 0;
 }
-
 .step-number {
-	font-size: 9.8rem;
-	font-weight: 600;
-	color: #ddd;
-	margin-bottom: 1.2rem;
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
 }
-
-.step-description{
-	line-height: 1.8;
-	font-size: 1.8rem; 
+.step-description {
+  line-height: 1.8;
+  font-size: 1.8rem;
+}
+.step-image-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-image-box::before, .step-image-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-image-box::before {
+  /***60% of parent width***/
+  padding-bottom: 60%;
+  background-color: antiquewhite;
+  width: 60%;
+  z-index: -2;
+}
+.step-image-box::after {
+  padding-bottom: 45%;
+  width: 45%;
+  background-color: #FDD7A4;
+	z-index: -1;
 }
 .step-img {
   width: 35%;
-}
-
-.step-image-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
