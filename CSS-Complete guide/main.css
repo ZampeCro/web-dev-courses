@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    width: auto;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 }
 
 #product-overview {
-    background: #ff1b68;
+    background-image: url("freedom.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;   
@@ -40,15 +41,33 @@ body {
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 54px);
+    width: calc(100% - 74px);
+    vertical-align: middle;
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
+	
+	
 }
 
 .main-nav__item {
     display: inline-block;
+	color: #1E4240;
+    margin: 0 20px;
+    
+    
+}
+.home_item {
+    color: #0F2221;
+    font-size: 22px;
+    font-weight: 700;
+    vertical-align: middle;
+    width: auto;
+}
+.main-nav__item a{
+	text-decoration: none;
+	color: #1E4240;
 }
