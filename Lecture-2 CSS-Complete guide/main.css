@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    width: auto;
 }
 
 body {
@@ -9,7 +8,7 @@ body {
 }
 
 #product-overview {
-    background-image: url("freedom.jpg");
+    background: url("freedom.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;   
@@ -17,13 +16,51 @@ body {
 
 .section-title {
     color: #2ddf5c;
+    text-align: center
 }
 
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
 }
+.plan{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
 
+.plan-highlited {
+    background-color: #2ddf5c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.50);
+}
+.plan_annotation{
+    color: green;
+    background: white;
+    padding: 5px;
+    box-shadow: 2px 5px 3px 1px;
+    border-radius: 10px;
+    
+}
+
+.price_free{
+    color: #1e4240;
+}
+.price_current{ color: #0e4f1f;}
+.plan-highlited .price_free{color: aliceblue;}
+.list {list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.list li{
+    margin-bottom: 5px;
+}
 /* h1 {
     font-family: sans-serif;
 } */
@@ -32,10 +69,19 @@ body {
     width: 100%;
     background: #2ddf5c;
     padding: 8px 16px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.50);
 }
 
 .main-header > div {
     display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .main-nav {
@@ -49,25 +95,36 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-	
-	
 }
 
 .main-nav__item {
     display: inline-block;
-	color: #1E4240;
-    margin: 0 20px;
-    
-    
+    margin: 0 16px;
 }
-.home_item {
-    color: #0F2221;
-    font-size: 22px;
-    font-weight: 700;
-    vertical-align: middle;
-    width: auto;
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
 }
-.main-nav__item a{
-	text-decoration: none;
-	color: #1E4240;
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
 }
