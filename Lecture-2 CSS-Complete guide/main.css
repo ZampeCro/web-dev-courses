@@ -13,6 +13,11 @@
   color: white;
   font-family: 'Anton', sans-serif;
 }
+.plan__list{
+    
+    text-align: center;
+}
+
 .plan {
   background-color: aquamarine;
   text-align: center;
