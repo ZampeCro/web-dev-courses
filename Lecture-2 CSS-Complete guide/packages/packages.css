@@ -1,3 +1,53 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+.container {
+   margin: 0;
+    padding-top: 32px;
+    box-sizing: border-box;
+    }
+
+.plan {
+    width: 80%;
+   margin: 0 0 10px 0;
+    background-color: #87B89F;
+    border: solid 3px #0e4f1f;
+    border-left: none;
+    
+        
+}
+.plan:hover, .plan:active{
+    
+    box-shadow: 10px 10px 10px 10px #1e4240;
+}
+.plan a{
+    text-decoration: none;
+}
+
+.plan_h1 {
+    color: black;
+  
+    
+}
+
+.plan_h2 {
+    color: grey;
+}
+
+.plan_p {
+    margin: 30px;
+    border: solid 3px rgba(116,134,152,1.00);
+    align-content: center;
+    background-color: aliceblue;color: #0e4f1f;
+    padding: 10px;
+    font-weight: bold;
+       
+}
+    
+
+
+.plan_gr {
+    background-color: #0e4f1f;
+    color: aliceblue;
+}
