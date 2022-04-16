@@ -1,33 +1,34 @@
-
-.box-1 {
-	display: inline-block;
-	padding: 10px 10px 10px 10px;
-	margin: 10px 10px 10px 10px;
-	border: #9B5354 solid 3px;
-/*	margin: 0;
-*/}
-
-
-.box-ext {
-	height: 100%;
-	height: 300px;
-	width: 50%;
+html {
+  background: #b3b3b3;
+  padding: 15px;
+  border: 5px solid white;
+  margin: 15px;
+  height: 2000px;
 }
-
-.box-hide {
-/*    display: none;*/
+body {
+  background: #fa923f;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 0;
 }
-
-.box-all {
-	
+.parent {
+  background: white;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 0;
 }
-
-.box-2:hover {
-	cursor: pointer;
-	color: red;
-	background-color: gray;
-	border: 0;
-	
+.parent div {
+  background: rgb(105, 105, 109);
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
 }
-
-
+.parent .child-1 {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%
+}
