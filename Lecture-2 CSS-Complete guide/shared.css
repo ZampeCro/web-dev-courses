@@ -32,15 +32,20 @@ body {
   .toggle-button {
     display: none;
   }
-  .main-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #2ddf5c;
-    padding: 0.5rem 1rem;
-    z-index: 1;
-    }}
+    .main-footer__link {
+  display: inline-block;
+  margin: 0 1rem;
+    }
+}
+  
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 122px);
+  vertical-align: middle;
+
+}
+
 .main-header > div {
   display: inline-block;
   vertical-align: middle;
@@ -147,8 +152,8 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+/*  display: inline-block;
+*/  margin: 1rem 0;
 }
 
 .main-footer__link a {
