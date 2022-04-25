@@ -1,3 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
-
+#hero {
+  height: 800px;
+  background-image: url("images/places/ocean.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#hero-content {
+  width: 900px;
+  background-color: rgba(42,42,42,0.79);
+  box-shadow: 2px 2px 6px rgba(36, 36, 36, 1.00);
+  border-radius: 8px;
+  text-align:center;
+  padding: 50px 0;
+	margin: 0 auto;
+	position: relative;
+	top: 200px;
+}

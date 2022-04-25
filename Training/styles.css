@@ -1,38 +1,31 @@
-@charset "utf-8";
-/* CSS Document */
-
-#container {
-  background-color: rgb(82, 23, 81);
-  padding: 10px;
-  width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+div {
+  background-color: #c7c7c7;
+  padding: 20px;
+  text-align: center;
 }
 
 p {
-  background-color: rgb(211, 88, 209);
-  margin: 10px;
-  width: 250px;
+  color: black;
+  padding: 50px;
+  margin: 0;
 }
 
-ul {
-  background-color: rgb(250, 146, 63);
-  list-style: none;
-  width: 250px;
-  margin: 10px;
-  padding: 0;
-   
+#container {
+  background-color: #521751;
 }
 
-#nav-links { padding: 0;
-    margin: 0;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;}
+#container p {
+  color: white;
+}
 
-li {
-  background-color: rgb(238, 212, 192);
-  width: 100px;
+#one {
+  background-color: #943092;
+}
+
+#two {
+  background-color: #c95bc7;
+}
+
+#three {
+  background-color: #dd61db;
 }
