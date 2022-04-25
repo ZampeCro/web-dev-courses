@@ -17,3 +17,32 @@
 	position: relative;
 	top: 200px;
 }
+#hero-content h1{
+	color: white;
+	font-size: 50px;
+	text-transform: uppercase;
+font-family: "Raleway", sans-serif;
+	margin: 0;
+}
+#hero-content p{
+	color: aliceblue;
+	font-feature-settings: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 32px;
+}
+
+#hero-content a {
+  text-decoration: none;
+  background-color: rgba(177, 204, 54, 1.00);
+  padding: 12px 24px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(36, 36, 36, 1.00);
+}
+
+#hero-content a:hover{
+	background-color: rgba(116,134,34,1.00);
+}
