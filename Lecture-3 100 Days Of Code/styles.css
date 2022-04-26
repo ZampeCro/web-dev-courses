@@ -8,30 +8,29 @@
 }
 #hero-content {
   width: 900px;
-  background-color: rgba(42,42,42,0.79);
+  background-color: rgba(42, 42, 42, 0.79);
   box-shadow: 2px 2px 6px rgba(36, 36, 36, 1.00);
   border-radius: 8px;
-  text-align:center;
+  text-align: center;
   padding: 50px 0;
-	margin: 0 auto;
-	position: relative;
-	top: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
 }
-#hero-content h1{
-	color: white;
-	font-size: 50px;
-	text-transform: uppercase;
-font-family: "Raleway", sans-serif;
-	margin: 0;
+#hero-content h1 {
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
 }
-#hero-content p{
-	color: aliceblue;
-	font-feature-settings: 24px;
-	text-transform: uppercase;
-	font-weight: 300;
-	margin-bottom: 32px;
+#hero-content p {
+  color: aliceblue;
+  font-feature-settings: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 32px;
 }
-
 #hero-content a {
   text-decoration: none;
   background-color: rgba(177, 204, 54, 1.00);
@@ -42,7 +41,22 @@ font-family: "Raleway", sans-serif;
   border-radius: 8px;
   box-shadow: 2px 4px 8px rgba(36, 36, 36, 1.00);
 }
+#hero-content a:hover {
+  background-color: rgba(116, 134, 34, 1.00);
+}
+#destinations {
+  display: flex;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+.destinations{margin: 0 20px;
 
-#hero-content a:hover{
-	background-color: rgba(116,134,34,1.00);
+}
+.destinations img {
+  height: 200px;
+	width: 100%;
+	box-shadow: 2px 4px 8px rgba(56,56,56,1.00);
+	border-radius: 10px;
+	object-fit: cover;
 }
