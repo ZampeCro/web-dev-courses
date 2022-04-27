@@ -44,19 +44,48 @@
 #hero-content a:hover {
   background-color: rgba(116, 134, 34, 1.00);
 }
+#highlights {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    background: linear-gradient(0deg, rgba(222,242,236,1.00), rgba(107,196,169,1.00) );
+}
+
+#highlights h2{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgba(86,103,126,1.00);
+    margin: 32px 0;
+}
 #destinations {
   display: flex;
 	width: 90%;
 	margin: auto;
 	margin-bottom: 40px;
+    justify-content: center;
 }
-.destinations{margin: 0 20px;
+.destination{margin: 0 20px;
+    text-transform: uppercase;
 
 }
-.destinations img {
+.destination img {
   height: 200px;
 	width: 100%;
 	box-shadow: 2px 4px 8px rgba(56,56,56,1.00);
 	border-radius: 10px;
 	object-fit: cover;
+}
+
+.destination p{
+    text-align: center;
+    font-size: 24px;
+    color: rgba(85,85,85,1.00);
+    margin: 20px 0;
+}
+.destination strong{
+    
+    color: rgba(14,79,31,1.00);
+    
 }
