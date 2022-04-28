@@ -72,3 +72,18 @@ grid-template-columns: 1fr 1fr;
     width: 100%;
     object-fit: cover;
 }
+
+.food-item-content {
+    padding: 8px 16px; text-align: center;
+}
+
+.btn {
+    background-color: rgba(187,138,10,1.00);
+    color: #D9E3EB;
+    border-radius: 6px;
+    padding: 4px 12px;
+}
+
+.btn:hover {
+ background-color:    
+rgba(150,111,8,1.00);}
