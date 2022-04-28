@@ -8,16 +8,16 @@ body{
 a{text-decoration: none;}
 
 #main-header {
-    height: 80px;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(71,79,87,1.00);
-    padding: 0 20px;
+    padding: 0 2%;
 }
 
 #logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgba(230,170,14,1.00);
     text-transform: uppercase;
@@ -32,12 +32,12 @@ a{text-decoration: none;}
 
 
 #main-header ul li {
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 #main-header nav ul li a {
     color: rgba(230,170,14,1.00);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #main-header nav ul li a:hover{
@@ -47,41 +47,44 @@ a{text-decoration: none;}
 main h1 {
    text-align: center;
     color: rgba(230,170,14,1.00);
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 #latest-products {
     width: 80%;
-    margin: 50px auto;
+    margin: 2rem auto;
 }
 
 #latest-products ul {
     display: grid;
 grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1rem;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 .food-items{
     background-color: rgba(237,210,164,1.00);
     border-radius: 10px;
     overflow: hidden;
+    list-style: none;
 }
 .food-items img {
-    height: 240px;
+    height: 16rem;
     width: 100%;
     object-fit: cover;
 }
 
 .food-item-content {
-    padding: 8px 16px; text-align: center;
+    padding: 1rem; text-align: center;
 }
+ 
 
 .btn {
     background-color: rgba(187,138,10,1.00);
     color: #D9E3EB;
     border-radius: 6px;
-    padding: 4px 12px;
+    padding: 0.5rem 1.5rem;
 }
 
 .btn:hover {
