@@ -1,92 +1,159 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    background-color: rgba(116,134,152,1.00);
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: rgba(116, 134, 152, 1.00);
 }
-a{text-decoration: none;}
-
+a {
+  text-decoration: none;
+}
 #main-header {
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(71,79,87,1.00);
-    padding: 0 2%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(71, 79, 87, 1.00);
+  padding: 0 2%;
 }
-
 #logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgba(230,170,14,1.00);
-    text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(230, 170, 14, 1.00);
+  text-transform: uppercase;
 }
-
+.menu-btn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+}
+.menu-btn span{width: 100%;
+height: 3px;
+    background-color: aliceblue;
+}
 #main-header ul {
- list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
-
-
 #main-header ul li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
-
 #main-header nav ul li a {
-    color: rgba(230,170,14,1.00);
-    font-size: 1.25rem;
+  color: rgba(230, 170, 14, 1.00);
+  font-size: 1.25rem;
+}
+#main-header nav ul li a:hover {
+  color: rgba(245, 206, 171, 1.00);
 }
 
-#main-header nav ul li a:hover{
-    color: rgba(245,206,171,1.00);
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(36,36,36,1.00);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
 }
-
-main h1 {
-   text-align: center;
-    color: rgba(230,170,14,1.00);
-    font-size: 3rem;
+#side-drawer:target{
+    display: block;
 }
-
-#latest-products {
-    width: 80%;
-    margin: 2rem auto;
+#side-drawer header{
+    height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(71, 79, 87, 1.00);
+  padding: 0 2%;
 }
-
-#latest-products ul {
-    display: grid;
-grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+#side-drawer ul{
+    list-style: none;
     margin: 0;
-    padding: 0;
-    list-style: none;
+    padding: 4rem 1rem;
+     display:  flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
 }
-.food-items{
-    background-color: rgba(237,210,164,1.00);
-    border-radius: 10px;
-    overflow: hidden;
-    list-style: none;
+#side-drawer li{
+    margin: 1rem 0;
+}
+#side-drawer a{
+    color: aliceblue;
+    font-size: 2rem;
+}
+main h1 {
+  text-align: center;
+  color: rgba(230, 170, 14, 1.00);
+  font-size: 3rem;
+}
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
+}
+#latest-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.food-items {
+  background-color: rgba(237, 210, 164, 1.00);
+  border-radius: 10px;
+  overflow: hidden;
+  list-style: none;
 }
 .food-items img {
-    height: 16rem;
-    width: 100%;
-    object-fit: cover;
+  height: 16rem;
+  width: 100%;
+  object-fit: cover;
 }
-
 .food-item-content {
-    padding: 1rem; text-align: center;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
- 
 
 .btn {
-    background-color: rgba(187,138,10,1.00);
-    color: #D9E3EB;
-    border-radius: 6px;
-    padding: 0.5rem 1.5rem;
+  background-color: rgba(187, 138, 10, 1.00);
+  color: #D9E3EB;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
 }
-
 .btn:hover {
- background-color:    
-rgba(150,111,8,1.00);}
+  background-color:
+    rgba(150, 111, 8, 1.00);
+}
+@media (max-width: 48rem) {
+  #main-header ul {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+    .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+}
+  main h1 {
+    text-align: center;
+    color: rgba(230, 170, 14, 1.00);
+    font-size: 1.5rem;
+  }
+  #latest-products ul {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+}
