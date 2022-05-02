@@ -2,6 +2,10 @@ body {
   background-color: rgba(36, 36, 36, 1.00);
   font-family: 'Roboto', sans-serif;
 }
+h1 {text-align: center; color: aliceblue;}
+ul{list-style: none;
+margin: 0;
+padding: 0;}
 form {
   width: 40rem;
   margin: 3rem auto;
@@ -28,6 +32,7 @@ input:focus, textarea:focus {
   color: rgba(15, 34, 33, 1.00);
   border-color: rgba(85,176,170,1.00);
 }
+textarea{resize: none;}
 button {
   display: block;
   font: inherit;
