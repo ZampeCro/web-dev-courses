@@ -1,90 +1,54 @@
-html {
-  background-color: rgb(236, 236, 236);
-  font-family: 'Krub', sans-serif;
-  font-weight: 400;
+body {
+  background-color: rgba(36, 36, 36, 1.00);
+  font-family: 'Roboto', sans-serif;
 }
-
-.card-container {
-  background-color: rgb(255, 255, 255);
-  width: 350px;
-  margin: 50px auto;
-  box-shadow: 3px 3px 10px rgb(201, 200, 200);
+h1 {text-align: center; color: aliceblue;}
+ul{list-style: none;
+margin: 0;
+padding: 0;}
+form {
+  width: 40rem;
+  margin: 3rem auto;
+  background-color: rgba(247, 247, 248, 1.00);
+  padding: 1rem;
+  border-radius: 10px;
 }
-
-h1 {
-  color: rgb(58, 58, 58);
-  text-align: left;
-  padding: 30px 50px 0px 50px;
-  margin: 10px 0;
-  font-family: 'Zilla Slab', serif;
-  font-weight: 600;
+label {
+  margin-bottom: 0.5rem;
+  display: block;
 }
-
-.card-info {
-  color: rgb(134, 134, 134);
-  text-align: left;
-  padding: 0 50px;
-  margin: 10px 0 30px 0;
+input, textarea, select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid rgba(170, 170, 170, 1.00);
+  padding: 0.25rem;
+  color: rgba(58, 58, 58, 1.00);
 }
-
-.price {
-  color: rgb(41, 41, 41);
-  background-color: rgb(167, 226, 255);
-  text-align: center;
-  margin: 30px auto 10px auto;
-  font-size: 50px;
-  font-weight: 600;
+input:focus, textarea:focus {
+  background-color: rgba(85,176,170,1.00);
+  color: rgba(15, 34, 33, 1.00);
+  border-color: rgba(85,176,170,1.00);
 }
-
-.price-info {
-  color: rgb(134, 134, 134);
-  text-align: center;
-  margin: 10px 0 30px 0;
-  padding: 0 50px;
+textarea{resize: none;}
+button {
+  display: block;
+  font: inherit;
+  background-color: rgba(30, 66, 64, 1.00);  
+	color: aliceblue;  
+	border: solid 0.25rem rgba(30, 66, 64, 1.00);
+  padding: 0.25rem 1.2rem;
+	border-radius: 6px;
+	cursor: pointer;
 }
-
-.sub-details {
-  width: 300px;
-  margin: 30px 50px;
+button:hover{
+	background-color: rgba(46,90,87,1.00); border-color: rgba(46,90,87,1.00);
 }
-
-
-.sub-feature {
-  display: flex;
-}
-
-.icon {
-  display: flex;
-  width: 10px;
-}
-
-.sub-feature-text {
-  color: rgb(58, 58, 58);
-  padding: 2px;
-  margin: 5px;   
-}
-
-
-.button-container {
-  text-align: center;
-  margin: 30px 0 0 0;
-}
-
-.button {
-  color: rgb(0, 170, 255);
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 70%;
-  padding: 10px;
-  margin: 0 0 30px 0;
-  border: 2px solid rgb(224, 224, 224);
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.button:hover {
-  color: white;
-  background-color: rgb(0, 170, 255);
-  border: 2px solid rgb(255, 255, 255);
+.form-control-inline {
+	display: flex;
+	}
+.form-control-inline input{width: auto;
+margin-right: 0.5rem;
 }
