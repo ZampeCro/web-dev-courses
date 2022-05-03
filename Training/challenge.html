@@ -3,9 +3,67 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-	<link rel="stylesheet" href="challenge.css">
+<link rel="stylesheet" href="challenge.css">
 </head>
-
+<header>
+  <h1>Contact Us</h1>
+</header>
 <body>
+<main>
+  <form action="challenge.html" method="get">
+    <h2>How can I help you?</h2>
+    <section id="contactdata">
+      <ul>
+        <li>
+          <input type="text" id="fullname">
+          <label for="fullname">Full name</label>
+        </li>
+        <li>
+          <input type="email" id="email">
+          <label for="email">e-mail address</label>
+        </li>
+        <li>
+          <input type="tel" id="phone">
+          <label for="phone">Phone number</label>
+        </li>
+        <li>
+          <textarea name="" id="message" cols="30" rows="10"></textarea>
+          <label for="message">Message</label>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <div>
+        <label for="websearch">How did you find us</label>
+        <select id="websearch" class="padajuci">
+          <option value="">kuci</option>
+          <option value="">na poslu</option>
+          <option value="">u kafani</option>
+        </select>
+      </div>
+    </section>
+    <section>
+      <h2>How should we reply</h2>
+      <ul>
+        <li class="formcontrol">
+          <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">
+          <label>Radio</label>
+        </li>
+        <br>
+        <li class="formcontrol">
+          <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">
+          <label> Radio2</label>
+        </li>
+      </ul>
+    </section>
+    <br>
+    <br>
+    <section class="formcontrol">
+      <input type="checkbox" id="checkbox" >
+      <label for="checbox">Accept terms</label>
+    </section>
+    <button type="submit">Submit</button>
+  </form>
+</main>
 </body>
 </html>
