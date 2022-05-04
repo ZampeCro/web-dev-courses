@@ -1,63 +1,81 @@
-@charset "utf-8";
-/* CSS Document */
 main {
-  padding-top: 2rem;
+    padding-top: 1rem;
 }
+
 .signup-title {
-  text-align: center;
-  font-size: 1.8rem;
-  color: rgba(140, 59, 59, 1.00);
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff5454;
 }
+
 .signup-form {
-  padding: 1rem;
+    padding: 1rem;
 }
+
 .signup-form label {
-  font-weight: bold;
+    font-weight: bold;
 }
-.signup-form label, .signup-form input, .signup-form select {
-  display: block;
-  margin-top: 1rem;
-  width: 100%;
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
 }
-/*.signup-form input[type="checkbox"]{}*/
-.signup-form input[id*="terms"], .signup-form input[id*="terms"] + label {
-  display: inline-block;
-  width: auto;
-  vertical-align: bottom;
+
+/* .signup-form input[type="checkbox"] */
+.signup-form input[id*="terms"],
+.signup-form input[id*="terms"] + label {
+    display: inline-block;
+    width: auto;
+    vertical-align: bottom;
 }
-.signup-form input:not([type="checkbox"]), .signup-form select {
-  border: 1px solid rgba(116, 134, 152, 1.00);
-  padding: 0.2rem 0.5rem;
-  font: inherit;
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
 }
-.signup-form input:focus, .signup-form select:focus {
-  outline: none;
-  border-color: rgba(93, 191, 161, 1.00);
-  background-color: rgba(125, 204, 180, 1.00);
+
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background: #d8f3df;
+    border-color: #2ddf5c;
 }
+
 .signup-form input[type="checkbox"] {
-  border: 1px solid rgba(52, 58, 64, 1.00);
-  background: rgba(116, 134, 152, 1.00);
-  width: 1rem;
-  height: 1rem;
-  -webkit-appearance: none;
-  appearance: none;
+    border: 1px solid #ccc;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
-.signup-form input:checked[type="checkbox"] {
-  background-color: rgba(125, 204, 180, 1.00);
-  border: 1px solid rgba(0, 174, 174, 1.00);
+
+.signup-form input[type="checkbox"]:checked {
+    background: #2ddf5c;
+    border: #0e4f1f;
 }
-.signup-form input.invalid, .signup-form select.invalid, .signup-form :invalid {
-  background-color: #E8A6A6;
-  border: 1px solid #FF2B2B;
+
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+    border-color: red !important;
+    background: #faacac;
 }
+
 .signup-form button[type="submit"] {
-  display: block;
-  margin-top: 2rem;
+    display: block;
+    margin-top: 1rem;
 }
+
 @media (min-width: 40rem) {
-  .signup-form {
-    margin: auto;
-    width: 30rem;
-  }
+    .signup-form {
+        margin: auto;
+        width: 25rem;
+    }
 }
