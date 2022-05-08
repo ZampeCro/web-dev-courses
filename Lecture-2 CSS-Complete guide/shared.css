@@ -130,7 +130,7 @@ main {
   align-items: center;
 }
 .main-footer__link {
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
 }
 .main-footer__link a {
   color: white;
@@ -172,10 +172,11 @@ main {
   color: white;
   font: inherit;
   border: 1.5px solid #0e4f1f;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+	align-self: center;
 }
 .button:hover, .button:active {
   background: white;
