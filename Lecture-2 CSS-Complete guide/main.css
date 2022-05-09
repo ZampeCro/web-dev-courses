@@ -181,7 +181,8 @@ z-index: 1;
 
 .modal {
   position: fixed;
-  display: none;
+ opacity: 0;
+    transform: translateY(-3rem);
   z-index: 200;
   top: 20%;
   left: 30%;
