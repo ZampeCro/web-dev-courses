@@ -12,7 +12,7 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flex-wrap: nowrap;
   align-items: center;
   padding: 3rem 0;
   box-sizing: border-box; }
@@ -55,7 +55,7 @@ body {
   flex-direction: column; }
   .documentation-links li {
     margin: 0.2rem 0;
-    background: white; }
+    background: #00aeae; }
   .documentation-links .documentation-link {
     text-decoration: none;
     color: #521751;
