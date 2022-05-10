@@ -1,104 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Forms</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Course</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-<header>
-  <h1>Demo Form</h1>
-</header>
-<main>
-  <form action="index.html" method="get">
-<section>
-	<h2>Your personal details</h2>
-      <ul>
-        <li>
-          <label for="username">Your name</label>
-          <input type="text" name="user-name" id="username" required>
-        </li>
-        <li>
-          <label for="useremail">Your e-mail address</label>
-          <input type="email" name="user-email" id="useremail">
-        </li>
-        <li>
-          <label for="userpassword">Your password</label>
-          <input type="password" name="user-password" id="userpassword" required minlength="7">
-        </li>
-      </ul>
-    </section>
-	  
-    <section>
-		<h2>More details</h2>
-      <ul>
-        <li>
-          <label for="youage">Your age</label>
-          <input type="number" name="you-age" id="youage" required min="18" max="100">
-        </li>
-        <li>
-          <label for="birthdate">Your birthdate</label>
-          <input type="date" name="user-birthdate" id="birthdate" min="1921-01-01" max="2003-01-01">
-        </li>
-        <li>
-          <label for="favoritecolor"></label>
-          <select name="favorite-color" id="favoritecolor">
-            <option value="blue">Blue</option>
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-          </select>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <label for="textarea">Your message</label>
-      <textarea name="text-area" id="textarea" cols="30" rows="10"></textarea>
-    </section>
-    <section>
-      <h2>How should we verify your accont:</h2>
-      <ul>
-        <li class="form-control-inline">
-          <input type="radio" name="verify" id="verifytext" value="text" required />
-          <label for="verifytext">Via text messages (SMS)</label>
-        </li>
-        <li class="form-control-inline">
-          <input type="radio" name="verify" id="verifyphone" value="phone" required />
-          <label for="verifyphone">Via phone</label>
-        </li>
-        <li class="form-control-inline">
-          <input type="radio" name="verify" id="verifyemail" value="email" required />
-          <label for="verifyemail">Via e-mail</label>
-        </li>
-      </ul>
-    </section>
-    <section>
-		<h2>How should we contact you</h2>
-      <ul>
-        
-        <li class="form-control-inline">
-          <input type="checkbox" name="contact" id="contactphone" value="phone" >
-          <label for="contactphone">Contact me via phone</label>
-        </li>
-        <li class="form-control-inline">
-          <input type="checkbox" name="contact" id="contactmail" value="email" >
-          <label for="contactmail">Contact me via mail</label>
-        </li>
-      </ul>
-    </section>
-	  <hr>
-    <section>
-      <div class="form-control-inline">
-        <input type="checkbox" name="agree-terms" id="agreeterms" >
-        <label for="agreeterms">Agree terms</label>
-      </div>
-    </section>
-    <section>
-      <button type="submit">Submit</button>
-    </section>
-  </form>
-</main>
+    <div class="container">
+        <section class="sass-introduction">
+            <p>Sass stands for
+                <span class="char-highlight">S</span>yntactically
+                <span class="char-highlight">A</span>wesome
+                <span class="char-highlight">S</span>tyle
+                <span class="char-highlight">S</span>heets and it makes the creation of complex CSS code much easier.</p>
+        </section>
+        <section class="sass-details">
+            <header class="section-header">
+                <h1>Useful Resources</h1>
+            </header>
+            <ul class="documentation-links">
+                <li>
+                    <a class="documentation-link link-important" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass">Using &amp; Installing Sass</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested_rules">Nested Rules</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested_properties">Nested Properties</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#variables_">Variables</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists">Lists &amp; Maps</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/Sass/Script/Functions.html">Built-in Functions</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#import">Better Import</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#partials">Partials</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#media">Advanced @media</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#extend">Inheritance</a>
+                </li>
+                <li>
+                    <a class="documentation-link" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#defining_a_mixin">Mixins</a>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
+
 </html>

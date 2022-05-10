@@ -114,7 +114,7 @@
 }
 
 #key-features {
-  background: #ff1b68;
+  background: var(--crvena);
   margin-top: 5rem;
   padding: 1rem;
 }
@@ -214,3 +214,4 @@
   background: #ff5454;
   border-color: #ff5454;
 }
+

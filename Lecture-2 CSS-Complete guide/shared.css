@@ -5,7 +5,10 @@
 * {
   box-sizing: border-box;
 }
-
+:root{
+--crvena: #8c3b3b;
+--zelena: green;
+}
 html {
   height: 100%;
 }
@@ -131,6 +134,7 @@ main {
   background: white;
   border: none;
 }
+.main-nav__item--cta{ animation: wiggle 400ms 3s 8 ease-out;}
 
 @media (min-width: 40rem) {
   .toggle-button {
@@ -205,10 +209,10 @@ main {
 }
 
 .button {
-  background: #0e4f1f;
+  background: var(--zelena);
   color: white;
   font: inherit;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--zelena);
   padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
@@ -247,4 +251,14 @@ main {
     flex-direction: row;
     justify-content: center;
   }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+    50%{transform: rotateZ(0deg);}
+  100% {
+    transform: rotateZ(10deg);
+  }    
 }
