@@ -6,48 +6,49 @@
 </head>
 
 <body>
-	<h1>Race registration!</h1>
-	<form action="">
-      <div class="name"><label for="name">First Name</label>
-        <input type="text" name="name" id="name" required>
-        <label for="surname">Sure Name</label>
-        <input type="text" name="surname" id="surname">
-        
-      </div>
-		
-	  <div>
-			<br>
-		<label for="radio">Select a race</label>
-	    <p>
-		      <label>
-		        <input type="radio" name="RadioGroup1" value="5k" id="RadioGroup1_0">
-		        Fun run 5k</label>
-		      <br>
-		      <label>
-		        <input type="radio" name="RadioGroup1" value="half" id="RadioGroup1_1">
-		        Half marathon</label>
-		      <br>
-		      <label>
-		        <input type="radio" name="RadioGroup1" value="full" id="RadioGroup1_2">
-		        Full Marathon</label>
-		      <br>
-        </p>
-        </div>
-      <div class="contact">
-        <input type="email" name="email" id="email" required>
-        <label for="email">Email</label>
-        <input type="password" name="password" id="password" required>
-        <label for="password">Password</label>
-      </div>
-		<br>
-        <div class="age">
-          <label for="age">Select age</label>
-          <select id="age" name="age"><option value="under18">Under18</option>
-            <option value="1836">18-36</option><option value="3672">36-72</option>
-            </select>
-        </div>
-		<br>
-		<input type="submit" value="Register!">
-    </form>
+<h1>Race registration!</h1>
+<form action="">
+  <div class="name">
+    <label for="name">First Name</label>
+    <input type="text" name="name" id="name" required>
+    <label for="surname">Sure Name</label>
+    <input type="text" name="surname" id="surname">
+  </div>
+  <div>
+	  <br>
+    <label for="">Select a race</label>
+    <p>
+      <label>
+        <input type="radio" name="RadioGroup1" value="5k" id="RadioGroup1_0">
+        Fun run 5k</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup1" value="half" id="RadioGroup1_1">
+        Half marathon</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup1" value="full" id="RadioGroup1_2">
+        Full Marathon</label>
+      <br>
+    </p>
+  </div>
+  <div class="contact">
+    <input type="email" name="email" id="email" required>
+    <label for="email">Email</label>
+    <input type="password" name="password" id="password" required>
+    <label for="password">Password</label>
+  </div>
+  <br>
+  <div class="age">
+    <label for="age">Select age</label>
+    <select id="age" name="age">
+      <option value="under18">Under18</option>
+      <option value="middle">18-36</option>
+      <option value="old">36-72</option>
+    </select>
+  </div>
+  <br>
+  <input type="submit" value="Register!">
+</form>
 </body>
 </html>
