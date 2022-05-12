@@ -24,7 +24,7 @@ h1:nth-of-type(4n) {
 
 section:first-of-type h1:nth-of-type(1){
     /* transform-origin: top right; */
-    transform: rotate(45deg);
+    transform: rotate(45deg) 5s;
 }
 section:first-of-type h1:nth-of-type(2){
     transform: scale(0.6);
