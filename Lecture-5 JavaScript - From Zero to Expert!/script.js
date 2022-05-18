@@ -13,7 +13,10 @@ console.log(myCountry);
 console.log(myContinent);
 console.log(myPopulations);
  */
-true;
-console.log(true)
-let javaScripIsFun = "FUN"
-console.log(javaScripIsFun)
+
+let javaScriptIsFun = true;
+
+console.log(javaScriptIsFun);
+
+console.log(typeof true);
+console.log(typeof javaScriptIsFun);
