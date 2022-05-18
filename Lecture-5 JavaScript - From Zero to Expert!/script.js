@@ -46,7 +46,6 @@ var job = "programer";
 job = "teacher";
 console.log(job); */
 
-
 /* console.log(ageIgor *2, ageCery /3, 2**3);
 
 const firstName='Igor';
@@ -79,7 +78,6 @@ console.log(x,y);
 const averageAge=(ageCery+ageIgor) /2;
 console.log(averageAge); */
 
-
 /* Mark and John are trying to compare their BMI (Body Mass Index), which is 
 calculated using the formula:
 BMI = mass / height ** 2 = mass / (height * height) (mass in kg 
@@ -96,15 +94,13 @@ m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 
 m tall. */
 
+const markWeight = 78;
+const johnWeight = 92;
+const markHeight = 1.69;
+const johnHeight = 1.95;
 
-const markWeight=78;
-const johnWeight=92;
-const markHeight=1.69;
-const johnHeight=1.95;
-
-let markBMI=( markWeight / markHeight ** 2);
-let johnBMI=( johnWeight / johnHeight ** 2);
+let markBMI = markWeight / markHeight ** 2;
+let johnBMI = johnWeight / johnHeight ** 2;
 console.log(markBMI, johnBMI);
-let markHigherBMI=(markBMI>johnBMI);
+let markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
-
