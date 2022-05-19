@@ -187,6 +187,112 @@ console.log(String(23));
 /* console.log("Im " + 23 + " years old");
 console.log("23" - "10" - "3");
  */
-let n = "1" + 1;
+/* let n = "1" + 1;
 n = n - 1;
 console.log(n);
+ */
+
+/* const money = 0;
+if (money) {
+  console.log("don't spend it all");
+} else {
+  console.log("get a job");
+}
+
+let heigh;
+if (heigh) {
+  console.log("definirana je");
+} else {
+  console.log("nedefinirana je vrijednost");
+}
+ */
+
+/* const age = "18";
+if (age === 18) console.log("you are enought old -strict");
+if (age == 18) console.log("you are enought old -lose");
+
+const favorite = Number(prompt("what is yout favorite number"));
+/* console.log(favorite);
+console.log(typeof favorite); */
+/*
+if (favorite === 23) {
+  console.log("dobar");
+} else if (favorite === 7) {
+  console.log("dobra je i 7");
+} else {
+  console.log("nije ni 23 ni 7");
+}
+
+if (favorite !== 23) console.log("zasto nije 23");
+ */
+/* 
+const hasDriverLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+/* const shouldDrive = hasDriverLicense && hasGoodVision;
+if (shouldDrive) {
+  console.log("Goni misko");
+} else {
+  console.log("sjedi kuci");
+}
+ 
+const isTired = false;
+console.log(hasDriverLicense && hasGoodVision && isTired);
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log("Goni Misko");
+} else {
+  console.log("Sjedi kuci");
+}
+ */
+
+/* Coding Challenge #3
+There are two gymnastics teams, Dolphins and Koalas. They compete against each 
+other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition, 
+and print it to the console. Don't forget that there can be a draw, so test for that 
+as well (draw means they have the same average score)
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
+team only wins if it has a higher score than the other team, and the same time a 
+score of at least 100 points. Hint: Use a logical operator to test for minimum 
+score, as well as multiple else-if blocks �
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
+both teams have the same score and both have a score greater or equal 100 
+points. Otherwise, no team wins the trophy
+Test data:
+§ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 */
+
+const teamDolphins = 96 + 108 + 89;
+const teamKoalas = 88 + 91 + 110;
+
+console.log("Dolphins " + teamDolphins / 3, ":", "Koalas " + teamKoalas / 3);
+if (teamDolphins > teamKoalas) {
+  console.log(" 1st Dolphins is winner!!!");
+} else {
+  console.log(" 1st Koalas is winner!!!");
+}
+
+const firstDolphScore = 97;
+const firstKoalaScore = 109;
+
+if (firstDolphScore > firstKoalaScore && firstDolphScore >= 100) {
+  console.log(" 2nd Dolphins is winner!!!");
+} else if (firstKoalaScore > firstDolphScore && firstKoalaScore >= 100) {
+  console.log(" 2nd Koalas is winner!!!");
+} else {
+  console.log(" 2nd Niko nije pobjednik!!!");
+}
+
+const drawResuls = firstKoalaScore === firstDolphScore;
+if (drawResuls && drawResuls >= 100) {
+  console.log("Draw!!!");
+} else {
+  console.log("Not Draw!!!");
+}
