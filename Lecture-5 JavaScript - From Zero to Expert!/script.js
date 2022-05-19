@@ -93,7 +93,7 @@ Test data:
 m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 
 m tall. */
-
+/* 
 const markWeight = 78;
 const johnWeight = 92;
 const markHeight = 1.69;
@@ -104,3 +104,47 @@ let johnBMI = johnWeight / johnHeight ** 2;
 console.log(markBMI, johnBMI);
 let markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
+ */
+/* 
+
+const firstName = "Igor";
+const job = "Teacher";
+const birthYear = 1975;
+const currentYear = 2022;
+const igor = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job}!`;
+console.log(igor);
+console.log(`just a example`);
+console.log("starting\nwith\nmultiple\nnew lines");
+console.log(`Starting
+with
+multiple
+new lines `);
+ */
+
+/* const age = 15;
+if (age >= 18) {
+  console.log("vozi misko 🚕");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`sjedi kuci ${yearsLeft} godine ostalo`);
+}
+ */
+/* const birthYear = 2002;
+let century;
+if (birthYear <= 2000) {
+  let century = 20;
+  console.log(century);
+} else {
+  let century = 21;
+  console.log(century);
+}
+ */
+
+/* Coding Challenge #2
+Use the BMI example from Challenge #1, and the code you already wrote, and
+improve it.
+Your tasks:
+1. Print a nice output to the console, saying who has the higher BMI. The message
+is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+BMI (28.3) is higher than John's (23.9)!" */
