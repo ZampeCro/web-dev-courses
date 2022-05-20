@@ -1,27 +1,26 @@
-/* // JavaScript Document
-let js = 'amazing';
-// console.log(48 + 20 + 6 - 10);
+// JavaScript Document
+/* let js = "amazing";
+console.log(48 + 20 + 6 - 10);
 console.log("Jonas");
 console.log("23");
-let firstName="Bob";
+let firstName = "Bob";
 console.log(firstName);
 
-let myCountry="BiH";
-let myContinent="Europe";
-let myPopulations="Hrvati";
+let myCountry = "BiH";
+let myContinent = "Europe";
+let myPopulations = "Hrvati";
 console.log(myCountry);
 console.log(myContinent);
 console.log(myPopulations);
  */
-
 /* let javaScriptIsFun = true;
 
 console.log(javaScriptIsFun);
 
-// console.log(typeof true);
+console.log(typeof true);
 console.log(typeof javaScriptIsFun);
-// console.log(typeof 23);
-// console.log(typeof 'Jonas');
+console.log(typeof 23);
+console.log(typeof 'Jonas');
 
 javaScriptIsFun = "Yes";
 console.log(typeof javaScriptIsFun);
@@ -154,18 +153,18 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 BMI (28.3) is higher than John's (23.9)!"
  */
 
-/* const markWeight = 81;
+const markWeight = 81;
 const johnWeight = 52;
 const markHeight = 1.86;
 const johnHeight = 1.75;
 
 let markBMI = markWeight / markHeight ** 2;
 let johnBMI = johnWeight / johnHeight ** 2;
-/* console.log(markBMI, johnBMI);
+console.log(markBMI, johnBMI);
 let markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
- */
-/* let exampleBMI;
+
+let exampleBMI;
 exampleBMI = markBMI - johnBMI;
 if (markBMI > johnBMI) {
   console.log(
@@ -176,23 +175,21 @@ if (markBMI > johnBMI) {
     `John's BMI ${johnBMI} is higher than Mark's! for ${exampleBMI} BMI`
   );
 }
- */
-/* const inputYear = "1991";
+
+const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 19);
 console.log(typeof inputYear);
 console.log(String(23));
- */
 
-/* console.log("Im " + 23 + " years old");
+console.log("Im " + 23 + " years old");
 console.log("23" - "10" - "3");
- */
-/* let n = "1" + 1;
+
+let n = "1" + 1;
 n = n - 1;
 console.log(n);
- */
 
-/* const money = 0;
+const money = 0;
 if (money) {
   console.log("don't spend it all");
 } else {
@@ -205,16 +202,15 @@ if (heigh) {
 } else {
   console.log("nedefinirana je vrijednost");
 }
- */
 
-/* const age = "18";
+const age = "18";
 if (age === 18) console.log("you are enought old -strict");
 if (age == 18) console.log("you are enought old -lose");
 
 const favorite = Number(prompt("what is yout favorite number"));
-/* console.log(favorite);
-console.log(typeof favorite); */
-/*
+console.log(favorite);
+console.log(typeof favorite);
+
 if (favorite === 23) {
   console.log("dobar");
 } else if (favorite === 7) {
@@ -224,8 +220,7 @@ if (favorite === 23) {
 }
 
 if (favorite !== 23) console.log("zasto nije 23");
- */
-/* 
+
 const hasDriverLicense = true; //A
 const hasGoodVision = true; //B
 
@@ -233,13 +228,13 @@ console.log(hasDriverLicense && hasGoodVision);
 console.log(hasDriverLicense || hasGoodVision);
 console.log(!hasDriverLicense);
 
-/* const shouldDrive = hasDriverLicense && hasGoodVision;
+const shouldDrive = hasDriverLicense && hasGoodVision;
 if (shouldDrive) {
   console.log("Goni misko");
 } else {
   console.log("sjedi kuci");
 }
- 
+
 const isTired = false;
 console.log(hasDriverLicense && hasGoodVision && isTired);
 if (hasDriverLicense && hasGoodVision && !isTired) {
@@ -247,9 +242,8 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 } else {
   console.log("Sjedi kuci");
 }
- */
 
-/* Coding Challenge #3
+/*  Coding Challenge #3
 There are two gymnastics teams, Dolphins and Koalas. They compete against each 
 other 3 times. The winner with the highest average score wins a trophy!
 Your tasks:
@@ -267,10 +261,11 @@ points. Otherwise, no team wins the trophy
 Test data:
 § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
-§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 */
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 
+ */
 
-const teamDolphins = 96 + 108 + 89;
-const teamKoalas = 88 + 91 + 110;
+// const teamDolphins = 96 + 108 + 89;
+// const teamKoalas = 88 + 91 + 110;
 
 console.log("Dolphins " + teamDolphins / 3, ":", "Koalas " + teamKoalas / 3);
 if (teamDolphins > teamKoalas) {
@@ -295,4 +290,53 @@ if (drawResuls && drawResuls >= 100) {
   console.log("Draw!!!");
 } else {
   console.log("Not Draw!!!");
+}
+
+const day = "subota";
+switch (day) {
+  case "ponedjeljak": //day==='monday'
+    console.log("sastancenje");
+    console.log("ucenje");
+    break;
+
+  case "utorak": //day==='tuesday'
+    console.log("Jurisici");
+    console.log("racuni");
+    break;
+  case "srijeda":
+    console.log("kladionica");
+    console.log("teren");
+  case "cetvrtak":
+    console.log("lopte");
+    break;
+
+  case "petak":
+    console.log("kodiranje");
+    break;
+  case "subota":
+    console.log("kladionica");
+    break;
+  case "nedjelja":
+    console.log("odmaranje");
+    break;
+
+  default:
+    console.log("los dan");
+    break;
+}
+
+if (day === "petak") {
+  console.log("sastancenje");
+  console.log("ucenje");
+} else if (day === "subota") {
+  console.log("Jurisici");
+  console.log("racuni");
+} else if (day === "nedjelja") {
+  console.log("kladionica");
+  console.log("teren");
+} else if (day === "utorak" || day === "srijeda" || day === "kurac") {
+  console.log("kladionica");
+  console.log("teren");
+} else {
+  console.log("drkanje");
 }
