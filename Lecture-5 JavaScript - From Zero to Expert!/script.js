@@ -117,26 +117,68 @@ Test data:
 * -----------------------------------------------------------------------
 */
 
-const teamKoala = (koalaSc1, koalaSc2, koalaSc3) => {
-  const avgKoalas = (koalaSc1 + koalaSc2 + koalaSc3) / 3;
+/* 
+? ----------------TEST----------------------------
+let teamKoalas = (koalaSc1, koalaSc2, koalaSc3) => {
+  avgKoalas = (koalaSc1 + koalaSc2 + koalaSc3) / 3;
   console.log(`prosjecan score Koale je ${avgKoalas}`);
 };
-teamKoala(65, 54, 49);
 
-const teamDolphin = (dolphinSc1, dolphinSc2, dolphinSc3) => {
-  const avgDolphins = (dolphinSc1 + dolphinSc2 + dolphinSc3) / 3;
-  console.log(`prosjecan score Koale je ${avgDolphins}`);
+let teamDolphins = (dolphinSc1, dolphinSc2, dolphinSc3) => {
+  avgDolphins = (dolphinSc1 + dolphinSc2 + dolphinSc3) / 3;
+  console.log(`prosjecan score Delfina je ${avgDolphins}`);
 };
-teamDolphin(44, 23, 71);
+teamKoalas(65, 54, 49);
 
-const checkWinner = (avgKoalas, avgDolphins) => {
-  if (avgKoalas > avgDolphins * 2) {
+teamDolphins(44, 23, 71);
+
+let checkWinner = (avgKoalas, avgDolphins) => {
+  if (avgKoalas >= avgDolphins * 2) {
     console.log(`Koale su pobjednici ${avgKoalas} vs ${avgDolphins}`);
     return avgKoalas;
-  } else if (avgDolphins > avgKoalas * 2) {
+  } else if (avgKoalas <= avgDolphins * 2) {
     console.log(`Dolphin  su pobjednici ${avgDolphins} vs ${avgKoalas}`);
   } else {
-    ("nije niko pobjednik");
+    console.log("nije niko pobjednik");
   }
 };
-console.log(checkWinner(56, 46));
+checkWinner(1500, 100);
+checkWinner(avgKoalas, avgDolphins);
+
+teamKoalas(23, 34, 27);
+teamDolphins(85, 54, 41);
+checkWinner(avgKoalas, avgDolphins);
+? -----------------------------------------------------
+ */
+
+const friend1 = "Meho";
+const friend2 = "Pero";
+const friend3 = "Nurko";
+
+const friends = ["Meho", "Pero", "Nurko"];
+console.log(friends);
+
+const y = new Array(1991, 2000, 2003, 2100);
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Joza";
+console.log(friends);
+console.log(friends[2]);
+
+const firstName = "Igor";
+const igor = [firstName, "Kalin", 2022 - 1975, friends];
+console.log(igor);
+
+//todo -------- Functions
+
+const calcAge1 = function (birthYear) {
+  return 2022 - birthYear;
+};
+years = [1990, 1975, 1972, 1992];
+console.log(calcAge1(years[1]));
+const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[2])];
+console.log(ages);
+
+//todo --------------------------------
