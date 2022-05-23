@@ -171,7 +171,7 @@ const firstName = "Igor";
 const igor = [firstName, "Kalin", 2022 - 1975, friends];
 console.log(igor);
 
-//todo -------- Functions
+//todo -------- Functions-----------------------
 
 const calcAge1 = function (birthYear) {
   return 2022 - birthYear;
@@ -181,4 +181,4 @@ console.log(calcAge1(years[1]));
 const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[2])];
 console.log(ages);
 
-//todo --------------------------------
+//todo -----------------------------------------
