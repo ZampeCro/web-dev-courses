@@ -150,7 +150,7 @@ teamDolphins(85, 54, 41);
 checkWinner(avgKoalas, avgDolphins);
 ? -----------------------------------------------------
  */
-
+/*
 const friend1 = "Meho";
 const friend2 = "Pero";
 const friend3 = "Nurko";
@@ -170,15 +170,57 @@ console.log(friends[2]);
 const firstName = "Igor";
 const igor = [firstName, "Kalin", 2022 - 1975, friends];
 console.log(igor);
+*/
 
 //todo -------- Functions-----------------------
 
-const calcAge1 = function (birthYear) {
+/* const calcAge1 = function (birthYear) {
   return 2022 - birthYear;
 };
 years = [1990, 1975, 1972, 1992];
 console.log(calcAge1(years[1]));
 const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[2])];
 console.log(ages);
-
+ */
 //todo -----------------------------------------
+
+/* const friends = ["Meho", "Pero", "Nurko"];
+const newLenght = friends.push("Kemo");
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift("Stevo");
+friends.unshift("Yarko");
+
+friends.pop();
+const izbacen = friends.shift();
+console.log(izbacen);
+console.log(friends);
+console.log(friends.includes("Meho"));
+console.log(friends.includes("Yarko"));
+if (friends.includes("Stevo")) {
+  console.log("Okle prijatelj Stevo");
+}
+ */
+
+//*----------------- OPis Testa----------
+
+/* Coding Challenge #4
+Steven wants to build a very simple tip calculator for whenever he goes eating in a 
+restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 
+300. If the value is different, the tip is 20%.
+Your tasks:
+1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for 
+this. It's not allowed to use an if/else statement � (If it's easier for you, you can 
+start with an if/else statement, and then try to convert it to a ternary 
+operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value 
+(bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 
+316.25”
+Test data:
+§ Data 1: Test for bill values 275, 40 and 430
+
+ */
+//*-------------------------------------
+
+//? -------------TEST 2---------------
