@@ -205,22 +205,46 @@ if (friends.includes("Stevo")) {
 
 //*----------------- OPis Testa----------
 
-/* Coding Challenge #4
-Steven wants to build a very simple tip calculator for whenever he goes eating in a 
-restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 
-300. If the value is different, the tip is 20%.
+/* Coding Challenge #2
+Steven is still building his tip calculator, using the same rules as before: Tip 15% of 
+the bill if the bill value is between 50 and 300, and if the value is different, the tip is 
+20%.
 Your tasks:
-1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for 
-this. It's not allowed to use an if/else statement � (If it's easier for you, you can 
-start with an if/else statement, and then try to convert it to a ternary 
-operator!)
-2. Print a string to the console containing the bill value, the tip, and the final value 
-(bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 
-316.25”
-Test data:
-§ Data 1: Test for bill values 275, 40 and 430
+1. Write a function 'calcTip' that takes any bill value as an input and returns 
+the corresponding tip, calculated based on the rules above (you can check out 
+the code from first tip calculator challenge if you need to). Use the function 
+type you like the most. Test the function using a bill value of 100
+2. And now let's use arrays! So create an array 'bills' containing the test data 
+below
+3. Create an array 'tips' containing the tip value for each bill, calculated from 
+the function you created before
+4. Bonus: Create an array 'total' containing the total values, so the bill + tip
+Test data: 125, 555 and 44
+
+
+
+const calcAge1 = function (birthYear) {
+  return 2022 - birthYear;
+};
+years = [1990, 1975, 1972, 1992];
+console.log(calcAge1(years[1]));
+const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[2])];
+console.log(ages);
+
+
+
 
  */
 //*-------------------------------------
 
-//? -------------TEST 2---------------
+//? -------------TEST 2------------------------------
+
+const tip = function (calcTip) {
+  return calcTip <= 300 && calcTip >= 50 ? calcTip * 0.15 : calcTip * 0.2;
+};
+const bills = [125, 555, 44];
+const bill = [tip(bills[0]), tip(bills[1]), tip(bills[2])];
+const total = [bills[0] + bill[0], bills[1] + bill[1], bills[2] + bill[2]];
+console.log(bills, bill, total);
+
+//?---------------------------------------------------
