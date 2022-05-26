@@ -1,10 +1,11 @@
-const customNumber = 30;
-let resuls;
-resuls = Number(18);
-const resuls1 = resuls + customNumber;
-let resuls2 = resuls1 - 20;
-resuls2 = resuls2 * 5;
-resuls2 = resuls2 / 2;
+const task3Element = document.getElementById("task-3");
 
-alert(resuls1);
-alert(resuls2);
+function firstFunction(text1) {
+  alert("kara mara");
+}
+
+function secondFunction(text2) {
+  alert(secondFunction);
+}
+let secondVar = "hargija";
+ 
