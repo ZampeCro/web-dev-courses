@@ -1,8 +1,5 @@
-const link = document.querySelector("a");
-console.log(link.getAttribute("href"));
-link.setAttribute("href", "https://bljesak.info/");
-link.innerText = "Bljesak Mostar";
-
-const mssg = document.querySelector("p");
-console.log(mssg.getAttribute("class"));
-mssg.setAttribute("class", "success");
+const title = document.querySelector("h1");
+console.log(title.style);
+title.style.margin = "30px";
+title.style.color = "#001680";
+title.style.fontSize = "40px";
