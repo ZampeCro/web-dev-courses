@@ -1,11 +1,13 @@
 // const button = document.querySelector('button');
-
+const ul = document.querySelector("ul");
 // button.addEventListener('click', () => {
 //   console.log('you clicked me');
 // });
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
-  button.target.add;
+  const li = document.createElement("li");
+  li.textContent = "something to do";
+  ul.prepend(li);
 });
 
 const items = document.querySelectorAll("li");
