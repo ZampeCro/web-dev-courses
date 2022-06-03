@@ -1,23 +1,17 @@
-// const button = document.querySelector('button');
-const ul = document.querySelector("ul");
-// button.addEventListener('click', () => {
-//   console.log('you clicked me');
-// });
 const button = document.querySelector("button");
+const popup = document.querySelector(".popup-wrapper");
+const close = document.querySelector(".popup-close");
+
 button.addEventListener("click", () => {
-  const li = document.createElement("li");
-  li.textContent = "something to do";
-  ul.prepend(li);
+  popup.style.display = "block";
 });
 
-const items = document.querySelectorAll("li");
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+});
 
-items.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    // console.log('item clicked');
-    // console.log(e);
-    // console.log(e.target);
-    // console.log(item);
-    e.target.remove();
-  });
+popup.addEventListener("click", (e) => {
+  if (e.target.className === "popup-wrapper") {
+    popup.style.display = "none";
+  }
 });
