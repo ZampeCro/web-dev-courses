@@ -1,17 +1,15 @@
-const button = document.querySelector("button");
-const popup = document.querySelector(".popup-wrapper");
-const close = document.querySelector(".popup-close");
+const form = document.querySelector(".signup-form");
+const feedback = document.querySelector(".feedback");
 
-button.addEventListener("click", () => {
-  popup.style.display = "block";
-});
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  // validation
+  const username = form.username.value;
+  const namePattern = /^[a-z A-Z]{6,12}$/;
 
-close.addEventListener("click", () => {
-  popup.style.display = "none";
-});
-
-popup.addEventListener("click", (e) => {
-  if (e.target.className === "popup-wrapper") {
-    popup.style.display = "none";
+  if (namePattern.test(username)) {
+    feedback.textContent = "dobar";
+  } else {
+    feedback.textContent = "ne valja";
   }
 });
