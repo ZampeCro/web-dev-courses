@@ -1,15 +1,17 @@
-const form = document.querySelector(".signup-form");
-const feedback = document.querySelector(".feedback");
+const scores = [10, 30, 15, 25, 50, 40, 5];
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  // validation
-  const username = form.username.value;
-  const namePattern = /^[a-z A-Z]{6,12}$/;
-
-  if (namePattern.test(username)) {
-    feedback.textContent = "dobar";
-  } else {
-    feedback.textContent = "ne valja";
-  }
+/* const filteredScores = scores.filter((score) => {
+  return score > 20;
 });
+console.log(filteredScores);
+ */
+
+const users = [
+  { name: "shaun", premium: true },
+  { name: "yoshi", premium: false },
+  { name: "mario", premium: false },
+  { name: "chun-li", premium: true },
+];
+const premiumUsers = users.filter((user) => user.premium);
+
+console.log(premiumUsers);
