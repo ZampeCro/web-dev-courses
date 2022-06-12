@@ -239,7 +239,7 @@ console.log(ages);
 
 //? -------------TEST 2------------------------------
 
-const tip = function (calcTip) {
+/* const tip = function (calcTip) {
   return calcTip <= 300 && calcTip >= 50 ? calcTip * 0.15 : calcTip * 0.2;
 };
 const bills = [125, 555, 44];
@@ -248,3 +248,21 @@ const total = [bills[0] + bill[0], bills[1] + bill[1], bills[2] + bill[2]];
 console.log(bills, bill, total);
 
 //?---------------------------------------------------
+ */
+
+// Introduction to Objects
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 46,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas.lastName);
