@@ -309,7 +309,7 @@ GOOD LUCK 😀
 todo----------------------------------------
  */
 
-const mark = {
+/* const mark = {
   fullName: "Mark Miller",
   mass: 78,
   height: 1.69,
@@ -330,7 +330,22 @@ const john = {
 console.log(mark.calcBMI());
 console.log(john.calcBMI());
 console.log(
-  `${john.fullName} BMI ${john.calcBMI()} is ${
+  `${john.fullName} BMI (${john.calcBMI()}) is ${
     john.calcBMI() < mark.calcBMI() ? "lower" : "heigher"
-  } than ${mark.fullName} ${mark.calcBMI()}`
+  } than ${mark.fullName} (${mark.calcBMI()})`
 );
+ */
+/* console.log('lifring repetition 1');
+console.log('lifring repetition 2');
+console.log('lifring repetition 3');
+console.log('lifring repetition 4');
+console.log('lifring repetition 5');
+console.log('lifring repetition 6');
+console.log('lifring repetition 7');
+console.log('lifring repetition 8');
+console.log('lifring repetition 9');
+console.log('lifring repetition 10');
+ */
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`lifting repetition 1 ${rep}`);
+}
