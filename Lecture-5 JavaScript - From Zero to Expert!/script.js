@@ -330,7 +330,7 @@ const john = {
 console.log(mark.calcBMI());
 console.log(john.calcBMI());
 console.log(
-  `John BMI ${john.calcBMI()} is ${
+  `${john.fullName} BMI ${john.calcBMI()} is ${
     john.calcBMI() < mark.calcBMI() ? "lower" : "heigher"
-  } than ${mark.calcBMI()}`
+  } than ${mark.fullName} ${mark.calcBMI()}`
 );
