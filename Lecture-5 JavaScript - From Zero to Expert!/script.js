@@ -346,6 +346,43 @@ console.log('lifring repetition 8');
 console.log('lifring repetition 9');
 console.log('lifring repetition 10');
  */
-for (let rep = 1; rep <= 10; rep++) {
+
+/* for (let rep = 1; rep <= 10; rep++) {
   console.log(`lifting repetition 1 ${rep}`);
 }
+ */
+
+/* const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[i], typeof jonas[i]);
+
+  //*------------Filling types of Array------------------
+  types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
+}
+console.log(types);
+ */
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages[i] = 2022 - years[i];
+}
+console.log(ages);
+
+for (let i = 0; i < jonas.length; i++) {
+  types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
+}
+console.log(types);
