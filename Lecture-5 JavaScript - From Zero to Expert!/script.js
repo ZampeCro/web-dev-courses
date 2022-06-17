@@ -130,5 +130,8 @@ const printForecast = function (t1, t2) {
   console.log(
     `${temps[0]}C°... ${temps[1]}C°... ${temps[2]}C°... ${temps[3]}C°... ${temps[5]}C°...  `
   );
+  const resultForecast = function(arr)[
+    
+  ]
 };
-const resultForecast = printForecast([17, 21, 23], [12, 5, -5, 0, 4]);
+printForecast([17, 21, 23], [12, 5, -5, 0, 4]);
