@@ -16,11 +16,18 @@ document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
   const quess = Number(document.querySelector('.guess').value);
   console.log(quess, typeof quess);
+  //! ------ Pogresan unos------------
   if (!quess) {
     document.querySelector('.message').textContent = '⛔ Wrong ⛔';
-  } else if (quess === secretNumber) {
+  }
+  //! ---------- BINGO ------------
+  else if (quess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct number 🎉';
-  } else if (quess > secretNumber) {
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
+  }
+  //!-------- Broj veci--------
+  else if (quess > secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = '🔻 To high';
       score = score - 1;
@@ -29,7 +36,9 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.message').textContent = '❗Game Over';
       document.querySelector('.score').textContent = 0;
     }
-  } else if (quess < secretNumber) {
+  }
+  //! ------- Broj manji--------
+  else if (quess < secretNumber) {
     document.querySelector('.message').textContent = '🔺 To low';
     score = score - 1;
     document.querySelector('.score').textContent = score;
