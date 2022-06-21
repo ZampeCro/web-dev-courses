@@ -22,12 +22,12 @@ document.querySelector('.check').addEventListener('click', function () {
   //! ------ Pogresan unos------------
   if (!quess) {
     displayMessage('⛔ Wrong ⛔');
-    //* document.querySelector('.message').textContent = '⛔ Wrong ⛔';
+    //// document.querySelector('.message').textContent = '⛔ Wrong ⛔';
   }
   //! ---------- BINGO ------------
   else if (quess === secretNumber) {
     displayMessage('Correct number 🎉');
-    //* document.querySelector('.message').textContent = 'Correct number 🎉';
+    //// document.querySelector('.message').textContent = 'Correct number 🎉';
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
     document.querySelector('.number').textContent = secretNumber;
@@ -41,14 +41,14 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > 1) {
       displayMessage(quess > secretNumber ? '🔻 To high' : '🔻 To low');
       /*
-       *        document.querySelector('.message').textContent =
-       *       quess > secretNumber ? '🔻 To high' : '🔻 To low';
+       //        document.querySelector('.message').textContent =
+       //       quess > secretNumber ? '🔻 To high' : '🔻 To low';
        */
       score = score - 1;
       document.querySelector('.score').textContent = score;
     } else {
       displayMessage('❗Game Over');
-      //* document.querySelector('.message').textContent = '❗Game Over';
+      //// document.querySelector('.message').textContent = '❗Game Over';
       document.querySelector('.score').textContent = 0;
     }
   }
@@ -96,7 +96,7 @@ document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   displayMessage('Start guessing.....');
-  //*  document.querySelector('.message').textContent = 'Start guessing.....';
+  ////  document.querySelector('.message').textContent = 'Start guessing.....';
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
