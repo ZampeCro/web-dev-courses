@@ -35,10 +35,10 @@ calcAge(1975);
 //// console.log(age);
 //// printAge();
  */
-
+/* 
 //* ------ HOISTING -------
 
-//!---- Variables
+!---- Variables
 console.log(me);
 //// console.log(job);
 //// console.log(year);
@@ -47,7 +47,7 @@ var me = 'Zampe';
 let job = 'tech';
 const year = 1975;
 
-//!----- Functions
+!----- Functions
 
 console.log(addDecl(2, 3));
 //// console.log(addExpr(2, 3));
@@ -64,7 +64,7 @@ const addExpr = function (a, b) {
 
 var addArrow = (a, b) => a + b;
 
-//!----- Example
+!----- Example
 if (!numProduct) {
   deleteShoppingCart();
 }
@@ -79,3 +79,18 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+ */
+
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2022 - birthYear);
+  console.log(this);
+};
+calcAge(1975);
+
+const calcAgeArrow = birthYear => {
+  console.log(2022 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1975);
