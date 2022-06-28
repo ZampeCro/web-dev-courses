@@ -94,3 +94,11 @@ const calcAgeArrow = birthYear => {
   console.log(this);
 };
 calcAgeArrow(1975);
+
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+  },
+};
+jonas.calcAge();
