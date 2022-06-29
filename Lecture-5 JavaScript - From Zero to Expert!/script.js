@@ -115,7 +115,7 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
  */
-
+/* 
 //* ----- REGULAR FUNCTION VS ARROW FUNCTION -----
 ////var firstName = 'Matilda';
 
@@ -132,7 +132,7 @@ const jonas = {
     const isMillenial = function () {
       console.log(self);
       console.log(self.year >= 1970 && self.year <= 1996);
-      */
+      
     //! ---------- Solution 2
     const isMillenial = () => {
       console.log(this);
@@ -160,4 +160,19 @@ var addArrow = (a, b) => {
   console.log(arguments);
   a + b;
 };
-addExpr(3, 7);
+addArrow(3, 7);
+ */
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Zampe',
+  age: 47,
+};
+const friend = me;
+friend.age = 37;
+console.log('Friend', friend);
+console.log('Me', me);
