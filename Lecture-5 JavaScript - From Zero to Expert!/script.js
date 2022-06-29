@@ -133,7 +133,7 @@ const jonas = {
       console.log(self);
       console.log(self.year >= 1970 && self.year <= 1996);
       
-    //! ---------- Solution 2
+    ! ---------- Solution 2
     const isMillenial = () => {
       console.log(this);
       console.log(this.year >= 1970 && this.year <= 1996);
@@ -148,7 +148,7 @@ const jonas = {
 jonas.greet();
 jonas.calcAge();
 
-//! -------- Arguments keyword
+! -------- Arguments keyword
 const addExpr = function (a, b) {
   console.log(arguments);
   return a + b;
@@ -162,6 +162,9 @@ var addArrow = (a, b) => {
 };
 addArrow(3, 7);
  */
+
+////! Primitives vs Objects in practice
+/* 
 let age = 30;
 let oldAge = age;
 age = 31;
@@ -176,3 +179,38 @@ const friend = me;
 friend.age = 37;
 console.log('Friend', friend);
 console.log('Me', me);
+ */
+////! ----- Primitive types
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+////! ----- Reference types
+const sutka = {
+  fistName: 'Sutka',
+  lastName: 'Mahinic',
+  age: 27,
+};
+const marriedSutka = sutka;
+marriedSutka.lastName = 'Omerpasic';
+console.log('Sutka prije udaje:', sutka);
+console.log('Sutka poslije udaje:', marriedSutka);
+
+//// marriedSutka={}
+
+////! ---- Copying objects
+
+const sutka2 = {
+  fistName: 'Sutka',
+  lastName: 'Mahinic',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+const sutkaCopy = Object.assign({}, sutka2);
+sutkaCopy.lastName = 'Omerpasic';
+sutkaCopy.family.push('Semsa');
+sutkaCopy.family.push('John');
+
+console.log('Sutka prije udaje:', sutka2);
+console.log('Sutka poslije udaje:', sutkaCopy);
