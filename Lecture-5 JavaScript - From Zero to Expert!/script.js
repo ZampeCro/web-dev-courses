@@ -212,5 +212,5 @@ sutkaCopy.lastName = 'Omerpasic';
 sutkaCopy.family.push('Semsa');
 sutkaCopy.family.push('John');
 
-console.log('Sutka prije udaje:', sutka2);
+console.log('Sutka prije udaje:', sutka2); // ista familija u oba slucaja, to je OK
 console.log('Sutka poslije udaje:', sutkaCopy);
