@@ -40,10 +40,6 @@ const restaurant = {
       `Order recived! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
-
-  orderPasta: function (ing1, ing2, ing3) {
-    console.log(`Ovdje je tvoje omiljen makaron ${ing1}, ${ing2}, ${ing3}`);
-  },
 };
 
 restaurant.orderDelivery({
@@ -83,58 +79,8 @@ const {
 } = openingHours;
 console.log(o, c);
 
-/*
- */
+/* 
 
-//! -----------SPREAD OPERATOR-----------
-
-const arr = [7, 8, 9];
-const badNewArr = [1, 2, 3, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
-
-const newArr = [1, 2, 3, ...arr];
-console.log(newArr);
-console.log(...newArr);
-
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
-
-//! Copy array
-
-const mainMenuCopy = [...restaurant.mainMenu];
-
-//! Join 2 arrays
-
-const menuNew = [...newMenu, ...restaurant.starterMenu];
-console.log(menuNew);
-
-//! Itterables: arrays, strings, maps, sets. NOT objects
-
-const str = 'Jonas';
-const letters = [...str, '', '.S'];
-console.log(letters);
-console.log(...str);
-
-const ingredients = [
-  /*   prompt("let's make pasta! ingredients1?"),
-  prompt('ingredients2?'),
-  prompt('ingredients3?'),
- */
-];
-console.log(ingredients);
-
-restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
-restaurant.orderPasta(...ingredients);
-
-//! Objects
-
-const newRestaurant = { foundedIn: 1975, ...restaurant, founder: 'Guiseppe' };
-console.log(newRestaurant);
-const restaurantCopy = { ...restaurant };
-restaurantCopy.name = 'Bella Italia';
-
-console.log(newRestaurant.name, restaurantCopy.name);
-/*
 ! Destructing arrays
 
 const arr = [2, 3, 4];
