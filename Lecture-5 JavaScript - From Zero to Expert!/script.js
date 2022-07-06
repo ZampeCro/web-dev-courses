@@ -50,9 +50,17 @@ const restaurant = {
   },
 };
 
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+//! null or undefined dont work with ?? (only 0 and '')
+const correctGuest = restaurant.numGuests ?? 10;
+console.log(correctGuest);
+
 //! USE any data type, RETURN any data type, short-circuiting
 
-console.log('------- OR --------');
+/* console.log('------- OR --------');
 
 console.log(3 || 'Jonas');
 console.log('' || 'Jonas');
@@ -70,14 +78,14 @@ console.log('------- AND --------');
 console.log(0 && 'Jonas');
 console.log(7 && 'Jonas');
 
-//! Practical example
+! Practical example
 
 if (restaurant.orderPizza) {
   restaurant.orderPizza('mushroms', 'spinach', 'origano');
 }
 
 restaurant.orderPizza && restaurant.orderPizza('mushroms', 'spinach');
-
+ */
 /* 
 restaurant.orderDelivery({
   time: '22:30',
