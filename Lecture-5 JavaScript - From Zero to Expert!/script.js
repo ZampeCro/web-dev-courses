@@ -67,6 +67,17 @@ const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
 
 console.log('------- AND --------');
+console.log(0 && 'Jonas');
+console.log(7 && 'Jonas');
+
+//! Practical example
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushroms', 'spinach', 'origano');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushroms', 'spinach');
+
 /* 
 restaurant.orderDelivery({
   time: '22:30',
