@@ -50,6 +50,24 @@ const restaurant = {
   },
 };
 
+//! USE any data type, RETURN any data type, short-circuiting
+
+console.log('------- OR --------');
+
+console.log(3 || 'Jonas');
+console.log('' || 'Jonas');
+console.log(true || null);
+console.log(undefined || null);
+
+restaurant.numGuests = 0;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log('------- AND --------');
+/* 
 restaurant.orderDelivery({
   time: '22:30',
   address: 'Mahe Djikica',
@@ -69,29 +87,29 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 
-//! default values
+! default values
 const { menu = [], starterMenu: starters = [] } = restaurant;
 console.log(menu, starters);
 
-//! Mutating variables
+! Mutating variables
 let a = 111;
 let b = 999;
 const obj = { a: 23, b: 7, c: 47 };
 ({ a, b } = obj);
 console.log(a, b);
 
-//! Nested objects
+! Nested objects
 
 const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
 
-/*
- */
+ 
+ 
 
-//! -----------SPREAD OPERATOR-----------
-
+! -----------SPREAD OPERATOR-----------
+/* 
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, 3, arr[0], arr[1], arr[2]];
 console.log(badNewArr);
@@ -103,16 +121,16 @@ console.log(...newArr);
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
 
-//! Copy array
+! Copy array
 
 const mainMenuCopy = [...restaurant.mainMenu];
 
-//! Join 2 arrays
+! Join 2 arrays
 
 const menuNew = [...newMenu, ...restaurant.starterMenu];
 console.log(menuNew);
 
-//! Itterables: arrays, strings, maps, sets. NOT objects
+! Itterables: arrays, strings, maps, sets. NOT objects
 
 const str = 'Jonas';
 const letters = [...str, '', '.S'];
@@ -120,17 +138,17 @@ console.log(letters);
 console.log(...str);
 
 const ingredients = [
-  /*   prompt("let's make pasta! ingredients1?"),
+  prompt("let's make pasta! ingredients1?"),
   prompt('ingredients2?'),
   prompt('ingredients3?'),
- */
+ 
 ];
 console.log(ingredients);
 
 restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 restaurant.orderPasta(...ingredients);
 
-//! Objects
+! Objects
 
 const newRestaurant = { foundedIn: 1975, ...restaurant, founder: 'Guiseppe' };
 console.log(newRestaurant);
@@ -139,10 +157,10 @@ restaurantCopy.name = 'Bella Italia';
 
 console.log(newRestaurant.name, restaurantCopy.name);
 
-//! ---- SPREAD operator becose of right side =
+! ---- SPREAD operator becose of right side =
 const arra = [1, 2, ...[3, 4]];
 
-//! ---- REST operator becose of left side =
+! ---- REST operator becose of left side =
 const [e, f, ...others] = [1, 2, 3, 4, 5, 6, 7];
 console.log(e, f, others);
 const [Pizza, , Rissoto, ...otherFood] = [
@@ -151,12 +169,12 @@ const [Pizza, , Rissoto, ...otherFood] = [
 ];
 console.log(Pizza, Rissoto, otherFood);
 
-//! ---- Objects
+! ---- Objects
 
 const { sat, ...weekdays } = restaurant.openingHours;
 console.log(weekdays);
 
-//! Functions
+! Functions
 
 const add = function (...numbers) {
   let sum = 0;
@@ -170,7 +188,7 @@ add(1, 6, 8, 3, 4, 3, 7, 8);
 const x = [2, 34, 34, 7];
 add(...x);
 restaurant.orderPizza('mushroms', 'onion', 'spinach', 'origano', 'ananas');
-
+ 
 /*
 ! Destructing arrays
 
