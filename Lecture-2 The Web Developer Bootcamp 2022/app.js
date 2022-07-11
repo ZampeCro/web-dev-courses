@@ -8,11 +8,36 @@ if (random > 0.5) {
   console.log(random);
 }
  */
-function getColor(phrase) {
-  //WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓
-  const phrase = 'stop';
-  if ((phrase = stop)) {
+/* function isEven(num){
+    //WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓ 
+   if (num==isEven){console.log('even')}
+
+ */
+/* function getColor(phrase) {
+  todo WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓
+  if (phrase == 'stop') {
+    console.log('red');
+  } else if (phrase == 'slow') {
+    console.log('yellow');
+  } else if (phrase == 'go') {
+    console.log('green');
   } else {
+    console.log('purple');
   }
-  //AND THIS LINE ↑↑↑↑↑
+  todo AND THIS LINE ↑↑↑↑↑
 }
+ */
+
+/* const password = prompt('Please enter yor password');
+todo ----- nuber of caracters
+if (password.length >= 6) {
+  if (password.indexOf(' ') === -1) {
+    console.log('valid password');
+  } else {
+    console.log('u have space');
+  }
+} else {
+  console.log('password too short');
+}
+todo------ no space in password
+ */
