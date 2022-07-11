@@ -8,3 +8,11 @@ if (random > 0.5) {
   console.log(random);
 }
  */
+function getColor(phrase) {
+  //WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓
+  const phrase = 'stop';
+  if ((phrase = stop)) {
+  } else {
+  }
+  //AND THIS LINE ↑↑↑↑↑
+}
