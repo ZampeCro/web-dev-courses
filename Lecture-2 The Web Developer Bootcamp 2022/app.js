@@ -9,7 +9,7 @@ if (random > 0.5) {
 }
  */
 /* function isEven(num){
-    //WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓ 
+    !WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓ 
    if (num==isEven){console.log('even')}
 
  */
@@ -42,7 +42,25 @@ if (password.length >= 6) {
 todo------ no space in password
  */
 
-let movieLine = ['meho', 'jure', 'andja'];
+/* let movieLine = ['meho', 'jure', 'andja'];
 movieLine.push('salko');
 
 let person = movieLine.pop();
+ */
+/* let colors = ['bijela', 'plava', 'zuta', 'crvena', 'smedja'];
+colors.splice(1, 0, 'kafena');
+ */
+
+// DO NOT TOUCH!!! (please)
+//todo ----challenge
+/* const airplaneSeats = [
+  ['Ruth', 'Anthony', 'Stevie'],
+  ['Amelia', 'Pedro', 'Maya'],
+  ['Xavier', 'Ananya', 'Luis'],
+  ['Luke', null, 'Deniz'],
+  ['Rin', 'Sakura', 'Francisco'],
+];
+
+! YOUR CODE GOES BELOW THIS LINE:
+airplaneSeats[3].splice(1, 1, 'Hugo');
+ */
