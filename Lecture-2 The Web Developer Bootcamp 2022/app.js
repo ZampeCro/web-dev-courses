@@ -41,3 +41,8 @@ if (password.length >= 6) {
 }
 todo------ no space in password
  */
+
+let movieLine = ['meho', 'jure', 'andja'];
+movieLine.push('salko');
+
+let person = movieLine.pop();
