@@ -79,7 +79,7 @@ console.log(person.firstName);
   zipcode: '11206',
 };
 
-//YOUR CODE GOES DOWN HERE:
+todo YOUR CODE GOES DOWN HERE:
 const fullAddress = [
   restaurant.address,
   restaurant.city,
@@ -88,7 +88,7 @@ const fullAddress = [
 ];
 console.log(fullAddress);
 
- */
+ 
 const restaurant = {
   name: 'Ichiran Ramen',
   address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
@@ -97,7 +97,7 @@ const restaurant = {
   zipcode: '11206',
 };
 
-//YOUR CODE GOES DOWN HERE:
+todo YOUR CODE GOES DOWN HERE:
 let fullAddress = [
   restaurant.address,
   restaurant.city,
@@ -105,3 +105,20 @@ let fullAddress = [
   restaurant.zipcode,
 ];
 console.log(fullAddress);
+*/
+/* for (let i = 0; i < 10; i++) {
+  console.log('im in th loop');
+  console.log(i);
+}
+ */
+/* for (let i = 0; i <= 5; i++) {
+  console.log('Da ba dee da ba daa');
+}
+ */
+/* for (let index = 100; index > 0; index -= 10) {
+  console.log(index);
+}
+ */
+for (let i = 25; i >= 0; i -= 5) {
+  console.log(i);
+}
