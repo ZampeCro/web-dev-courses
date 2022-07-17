@@ -119,6 +119,98 @@ console.log(fullAddress);
   console.log(index);
 }
  */
-for (let i = 25; i >= 0; i -= 5) {
+/* for (let i = 25; i >= 0; i -= 5) {
   console.log(i);
 }
+ */
+
+/* const animals = ["lion", "tiger", "gephard"];
+for (let i = 0; i < animals.length; i++) {
+  console.log(i, animals[i]);
+}
+ */
+//todo challenge
+// const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THIS LINE!
+
+// WRITE YOUR LOOP BELOW THIS LINE:
+
+/* for (let i = 0; i < people.length; i++) {
+  const zivotinje = people[i];
+  console.log(zivotinje.toUpperCase());
+}
+ */
+
+/* for (let i = 0; i < 10; i++) {
+  console.log(`I je: ${i}`);
+  for (let j = 1; j < 4; j++) console.log(`    J je: ${j}`);
+}
+ */
+
+/* let count = 0;
+while (count < 10) {
+  count++;
+  console.log(count);
+}
+ */
+
+/* const secret = "tajna";
+let guess = prompt("unesi tajnu");
+while (guess !== secret) {
+  guess = prompt("unesi ponovno");
+}
+console.log("pogodio si");
+ */
+/* let input = prompt("Say something:");
+while (true) {
+  input = prompt(input);
+  if (input.toLowerCase() === "stop") {
+    break;
+  }
+}
+ */
+
+//// todo Guessing game
+/* 
+let maximum = parseInt(prompt("unesi broj"));
+
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+console.log(targetNum);
+ */
+
+//* PRACTICE ------------------------------
+/* const subredits = ["knjige", "zivotine", "kompjuteri", "hargije"];
+for (let i = 0; i < subredits.length; i++) {
+  console.log(` Zelimo uci na: ${subredits[i]}`);
+}
+for (sub of subredits) {
+  console.log(` Zelimo uci na: ${sub}`);
+}
+ */
+//*----------------------------------------
+/* const people = [
+  ["Scooby", "Velma"],
+  ["Daphne", "Shaggy", "Fred"],
+];
+
+for (let i = 0; i < people.length; i++) {
+  const parovi = people[i];
+  for (let i = 0; i < parovi.length; i++) {
+    console.log(parovi[i]);
+  }
+}
+for (let row of people) {
+  for (let student of row) {
+    console.log(`${student}`);
+  }
+}
+ */
+//*----------------------------------------------
+//! -----Exercise-------------
+/* const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]; //DON'T CHANGE THIS LINE PLEASE!
+
+?WRITE YOUR LOOP BELOW THIS LINE:
+for (let mnoz of numbers) {
+  mnoz = mnoz * mnoz;
+  console.log(mnoz);
+} */
+//!---------------------------------
