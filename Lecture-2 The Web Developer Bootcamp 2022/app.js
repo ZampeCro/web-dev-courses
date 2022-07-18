@@ -214,3 +214,96 @@ for (let mnoz of numbers) {
   console.log(mnoz);
 } */
 //!---------------------------------
+
+/* let die1 = Math.floor(Math.random() * 6) + 1;
+console.log(die1);
+ */
+/* function singSong() {
+  console.log('do');
+  console.log('re');
+  console.log('mi');
+}
+singSong();
+ */
+//? DEFINE YOUR FUNCTION:
+
+/* function rant() {
+  console.log('message'.toUpperCase());
+  console.log('message'.toUpperCase());
+  console.log('message'.toUpperCase());
+}
+
+rant('message');
+
+
+*/
+
+/*
+*---------------------------------------
+function greet(firstName, lastName) {
+  console.log(`Greet ${firstName} ${lastName[0]}.`);
+}
+greet('Anja', 'Alavanja');
+*------------------------------------------
+ */
+
+/* function repeat(str, numRepeat) {
+  let result = '';
+  for (let i = 0; i < numRepeat; i++) {
+    result += str;
+  }
+  console.log(result);
+}
+repeat('kara-mara ', 5);
+ */
+//?-----------------------------------------
+//todo  ------------Exercise--------
+
+/* function isSnakeEyes(dice1, dice2) {
+  if (dice1 === 1 && dice2 === 1) {
+    console.log('Snake Eyes!');
+  } else {
+    console.log('Not Snake Eyes!');
+  }
+}
+isSnakeEyes(2, 1);
+ */
+//* ------------------------------------
+
+/* function add(x, y) {
+  if (typeof x !== 'number' || typeof y !== 'number') {
+    return false;
+  }
+  let sum = x + y;
+  return sum;
+}
+const total = add(add(2, 23), 10);
+
+console.log(total);
+ */
+//todo ------------------------------------
+
+function multiply(x, y) {
+  return x * y;
+}
+multiply(2, 3);
+
+//todo -------------------------------------
+
+function isShortsWeather(temperature) {
+  if (temperature >= 75) {
+    return true;
+  }
+  return false;
+}
+isShortsWeather(80);
+
+//todo ----------------------------------
+
+function lastElement(arr) {
+  if (arr.length === 0) {
+    return null;
+  } else {
+    return arr[arr.length - 1];
+  }
+}
