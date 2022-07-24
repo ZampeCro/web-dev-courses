@@ -256,7 +256,6 @@ greet('Anja', 'Alavanja');
 }
 repeat('kara-mara ', 5);
  */
-//?-----------------------------------------
 //todo  ------------Exercise--------
 
 /* function isSnakeEyes(dice1, dice2) {
@@ -282,13 +281,13 @@ const total = add(add(2, 23), 10);
 console.log(total);
  */
 //todo ------------------------------------
-
+/* 
 function multiply(x, y) {
   return x * y;
 }
 multiply(2, 3);
 
-//todo -------------------------------------
+todo -------------------------------------
 
 function isShortsWeather(temperature) {
   if (temperature >= 75) {
@@ -298,7 +297,7 @@ function isShortsWeather(temperature) {
 }
 isShortsWeather(80);
 
-//todo ----------------------------------
+todo ----------------------------------
 
 function lastElement(arr) {
   if (arr.length === 0) {
@@ -307,3 +306,234 @@ function lastElement(arr) {
     return arr[arr.length - 1];
   }
 }
+ */ //todo ----------------------------------
+//*------------------------------------------
+/* let totalEggs = 0;
+function collectEggs() {
+  totalEggs = 6;
+}
+console.log(totalEggs);
+collectEggs();
+console.log(totalEggs);
+ */ //*-----------------------------------------
+
+/* let bird = 'Stiglic';
+function fasha() {
+  let bird = 'Lugarin';
+  console.log(bird);
+}
+console.log(bird);
+fasha();
+ */ //*----------------------------------------------
+
+/* let square = function (number) {
+  num = Math.pow(number, 2);
+  console.log(num);
+};
+square(4);
+ */
+//*-------------------- Roll dice twice/10 times -----------------------------------
+
+/* function callTwice(func) {
+  func();
+  func();
+}
+function rollTenTimes(n) {
+  for (let i = 0; i < 10; i++) {
+    n();
+  }
+}
+function rollDice() {
+  const roll = Math.floor(Math.random() * 6) + 1;
+  console.log(roll);
+}
+rollTenTimes(rollDice);
+ */
+//*----------------------------------------------------------------------
+
+/* function makeMysteryFunc() {
+  const rand = Math.random();
+  if (rand > 0.5) {
+    return function () {
+      console.log('Dobro je');
+    };
+  } else {
+    return function () {
+      alert('zajebo si');
+      alert('zajebo si');
+      alert('zajebo si');
+    };
+  }
+}
+const mystery = makeMysteryFunc();
+console.log(mystery);
+ */
+//*------------------------------------------------------------------------
+/* function isBetween(num) {
+  return num >= 50 && num <= 100;
+}
+ */
+/* function isBetween(min, max) {
+  return function (num) {
+    return num >= min && num <= max;
+  };
+}
+const isAdult = isBetween(19, 40);
+console.log(isAdult(15));
+ */
+//*----------------------------------------------------------
+
+/* const myMath = {
+  PI: 3.14,
+  naKvadrat(num) {
+    return num ** 2;
+  },
+  naTrecu(num) {
+    return num ** 3;
+  },
+};
+ */
+
+//todo --------- exercise method------
+
+/* const square = {
+  area(num) {
+    return num * num;
+  },
+  perimeter(num) {
+    return num * 4;
+  },
+};
+
+ */
+//todo--------------------------------
+
+/* const cat = {
+  name: 'Pero',
+  color: 'Plava',
+  func() {
+    console.log(`${this.name} kaze mijauuu`);
+  },
+};
+cat.func();
+const mjau2 = cat.func;
+mjau2();
+ */
+//*----------------------------------
+
+/* const hen = {
+  name: 'Helen',
+  eggCount: 0,
+  layAnEgg(num) {
+    num = num + 1;
+  },
+};
+hen.layAnEgg();
+hen.name;
+console.log(`${hen.layAnEgg}EGG`);
+hen.eggCount;
+ */
+//*---------------------------------
+
+//! ------ callback and array methods-------
+//? ---------------- forEach
+/* 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbers.forEach(function (el) {
+  if (el % 2 === 0) {
+    console.log(el);
+  }
+});
+ */
+//* ------------same example
+
+/* for (const el of numbers) {
+  console.log(el);
+}
+ */
+
+/* 
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const nums2 = nums.map(function (br) {
+  return br * 2;
+});
+console.log(nums2);
+ */
+//todo --------- START --------
+
+/* const fullNames = [
+  { first: 'Albus', last: 'Dumbledore' },
+  { first: 'Harry', last: 'Potter' },
+  { first: 'Hermione', last: 'Granger' },
+  { first: 'Ron', last: 'Weasley' },
+  { first: 'Rubeus', last: 'Hagrid' },
+  { first: 'Minerva', last: 'McGonagall' },
+  { first: 'Severus', last: 'Snape' },
+];
+ */
+//todo --------------- END --------------
+
+//*------- arrow function------------
+
+/* const square = num => {
+  return num * num;
+};
+console.log(square(3)); */
+//*---------------------------------
+//todo --------- START --------
+/* const greet = name => {
+  console.log(`"Hey ${name}!"`);
+};
+greet('Hagrid');
+greet('Luna'); */
+//todo --------------- END --------------
+
+// const rollDie = () => Math.floor(Math.random() * 6) + 1;
+
+/* const rollDie = () => {
+  return Math.floor(Math.random() * 6) + 1;
+};
+ */
+//*------- setTimeout ------------------
+/* setTimeout(() => {
+  console.log('Hello');
+}, 3000); */
+
+/* const id = setInterval(() => {
+  console.log(Math.random());
+}, 3000); */
+//*-----------------------------------------
+/* const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+const rez = numbers.filter(n => {
+  return n < 10;
+});
+console.log(rez); */
+//*-----------------------------------------
+/* const exams = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+exams.some(score => score >= 5); */
+//todo --------------- Exercise (radi)------------------------------
+/* const numbers = [2, 4, 6, 8];
+const allEvents = numbers.every(num => num % 2 === 0);
+if (allEvents === true) {
+  console.log('bome jesu');
+} else {
+  console.log('bome nisu');
+} */
+
+//todo -----------------------------------------------------------------
+/* [3,5,7,9,11].reduce(accumulator, currentValue)=>{
+  return accumulator+currentValue
+} */
+
+const prices = [3, 5, 8, 12, 22];
+/* prices.reduce((total, price) => {
+  return total + price;
+}); */
+// prices.reduce((total, price) => total + price);
+const minPrice = prices.reduce((min, price) => {
+  if (price < min) {
+    return price;
+  }
+  return min;
+});
