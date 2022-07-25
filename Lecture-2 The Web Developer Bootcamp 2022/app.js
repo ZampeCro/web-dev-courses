@@ -526,14 +526,57 @@ if (allEvents === true) {
   return accumulator+currentValue
 } */
 
-const prices = [3, 5, 8, 12, 22];
-/* prices.reduce((total, price) => {
+/* const prices = [3, 5, 8, 12, 22];
+ prices.reduce((total, price) => {
   return total + price;
-}); */
+}); 
 // prices.reduce((total, price) => total + price);
 const minPrice = prices.reduce((min, price) => {
   if (price < min) {
     return price;
   }
   return min;
-});
+}); */
+//*----------------- SPREAD ---------------------
+/* const person = {
+  firstName: 'Vigo',
+  lastName: 'Mortesen',
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  shoutName: function () {
+    setTimeout(() => {
+      console.log(this);
+      console.log(this.fullName());
+    }, 3000);
+  },
+};
+ */
+/* function rollDice(numSides) {
+  if (numSides===undefined) {
+    numSides=6
+  }
+  return Math.floor(Math.random() * numSides) + 1;
+} */
+/* function rollDice(numSides = 6) {
+  return Math.floor(Math.random() * numSides) + 1;
+}
+function greet(name, msg = 'dje si') {
+  console.log(`${msg},${name}`);
+}
+ */
+/* const dataFromForm = {
+  email: 'boza@gmail.com',
+  password: '1234',
+  username: 'hasjha',
+};
+const newUser = { ...dataFromForm, admin: false }; */
+/* function sum(...nums) {
+  return nums.reduce((total, elem) => total + elem);
+}
+ */
+/* const scores = [12212, 323131, 5435543, 456446, 35353];
+const goldMedal = scores[0];
+const silverMedal = scores[1];
+const [gold, silver, ...everOneElse] = scores;
+ */
