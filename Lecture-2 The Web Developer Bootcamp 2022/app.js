@@ -580,3 +580,7 @@ const goldMedal = scores[0];
 const silverMedal = scores[1];
 const [gold, silver, ...everOneElse] = scores;
  */
+const li = document.querySelectorAll('li');
+
+li.classList.add('highlight');
+li.classList.toggle('highlight');
