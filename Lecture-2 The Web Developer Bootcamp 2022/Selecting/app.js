@@ -14,7 +14,11 @@ for (let img of squareImages) {
 for (let link of links) {
   console.log(link.href);
 } */
-const h2 = document.querySelector('h2');
+/* const h2 = document.querySelector('h2');
 // h2.setAttribute('class', 'purple');
 h2.classList.add('purple', 'border');
 h2.classList.toggle;
+ */
+const firstBold = document.querySelector('b');
+const paragraph = firstBold.parentElement;
+const squareImg = document.querySelector('.square');
