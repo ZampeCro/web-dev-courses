@@ -43,4 +43,7 @@ p.prepend(newB);
 
 const h2 = document.createElement('h2');
 h2.append('dobra je to koka bila');
-h1.insertAdjacentHTML;
+const h1 = document.querySelector('h1');
+h1.insertAdjacentElement('afterend', h2);
+
+//*----------------------------------------------------------
