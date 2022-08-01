@@ -1,0 +1,15 @@
+.button {
+  width: auto;
+  height: 500px;
+}
+
+.button > button {
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+}

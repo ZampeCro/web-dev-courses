@@ -1,30 +1,19 @@
-const btn2 = document.querySelector('#v2');
-btn2.onclick = function () {
-  console.log('you clicked me');
-  console.log('jos jednom klikno');
+const makeRndColor = () => {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r},${g},${b})`;
 };
-function onscreen() {
-  console.log('aaaaaaaaaaa');
+const buttons = document.querySelectorAll('button');
+for (let button of buttons) {
+  button.addEventListener('click', colorize);
 }
-btn2.onmouseenter = onscreen;
+const h1s = document.querySelectorAll('h1');
+for (let h1 of h1s) {
+  h1.addEventListener('click', colorize);
+}
 
-document.querySelector('h1').onclick = () => {
-  alert('You cliked me h1');
-};
-const btn3 = document.querySelector('#v3');
-btn3.addEventListener('click', function () {
-  alert('CLICKED');
-});
-
-const twist = function () {
-  console.log('twist');
-};
-const shout = function () {
-  console.log('shout');
-};
-const tas = document.querySelector('#tas');
-
-//* tas.onclick = twist;
-
-tas.addEventListener('click', shout, { once: true });
-tas.addEventListener('click', twist);
+function colorize() {
+  this.style.backgroundColor = makeRndColor();
+  this.style.color = makeRndColor();
+}
